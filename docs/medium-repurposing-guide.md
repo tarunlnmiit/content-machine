@@ -1,0 +1,273 @@
+# Medium Blog Repurposing — Weekly Workflow
+
+**Created:** 2026-05-12  
+**Schedule:** Runs PARALLEL with existing `docs/weekly-operating-guide.md`  
+**Session-aware:** Processes 1–2 blogs per week to avoid token exhaustion  
+**Scope:** Start with top 30 (15 high-engagement + 15 medium), expand as workflow proves
+
+---
+
+## How This Fits With Weekly Guide
+
+| Day | Weekly Guide | Medium Repurposing |
+|-----|---|---|
+| **Mon** | DS Blog production (25 min) | — |
+| **Tue** | Life Blog production (25 min) | — |
+| **Wed** | Poetry Blog production (25 min) | — |
+| **Thu** | Video recording (prep) | **Repurpose 1 Medium blog** (ghostwrite scripts) |
+| **Fri** | Distribution + scheduling | Record Medium video + podcast |
+| **Sat** | — | Edit + upload Medium video + podcast |
+| **Sun** | Analytics + KB refresh | Load posts to scheduler. Prep next Medium blog. |
+
+**Key:** Medium repurposing happens AFTER original weekly content ships. No conflicts.
+
+---
+
+## Weekly Batch Workflow (Repeating)
+
+Each week: **1 Medium blog → 1 YouTube video + 1 podcast episode + 4 social posts**
+
+### Thursday (30 min) — SCRIPTING
+
+Extract Medium blog + generate scripts (before session limit):
+
+```bash
+cd ~/Making\ It\ Big/Claude/content-machine
+
+# 1. Copy Medium article text to:
+# content/sources/{BLOG_SLUG}_medium.txt
+
+# 2. Generate YouTube script
+python3 scripts/ghostwrite.py \
+  --source content/sources/{BLOG_SLUG}_medium.txt \
+  --niche ds \
+  --voice analytical \
+  --desire clarity \
+  --topic "{BLOG_TITLE}" \
+  --format yt
+
+# 3. Generate podcast script (different voice)
+python3 scripts/ghostwrite.py \
+  --source content/sources/{BLOG_SLUG}_medium.txt \
+  --niche ds \
+  --voice conversational \
+  --desire enjoyment \
+  --topic "{PODCAST_TITLE_VARIANT}" \
+  --format podcast
+
+# 4. Generate social posts
+python3 scripts/repurpose_blog.py \
+  --source content/sources/{BLOG_SLUG}_medium.txt \
+  --platforms twitter instagram linkedin threads
+```
+
+**Output:** 2 scripts + 4 social post files ready.
+
+---
+
+### Friday (3–4 hrs) — RECORDING
+
+Record both video + podcast in one session:
+
+```bash
+# Record YouTube video (2 hrs)
+# - Use DaVinci Resolve or OBS
+# - Open: content/scripts/{DATE}_{BLOG_SLUG}_yt.md
+# - Record screen + voice with Python/coding demo
+# - Save: assets/video/edited/{DATE}_{BLOG_SLUG}_yt.mp4
+# - Target: 8–10 min final
+
+# Record podcast episode (1–2 hrs)
+# - Use Audacity or Voice Memos app
+# - Open: content/scripts/{DATE}_{BLOG_SLUG}_podcast.md
+# - Record voice only (no screen)
+# - Save: assets/audio/{DATE}_{BLOG_SLUG}_podcast.wav
+# - Target: 12–15 min
+
+# Quick check: files exist
+ls -lh assets/video/edited/{DATE}_{BLOG_SLUG}_yt.mp4
+ls -lh assets/audio/{DATE}_{BLOG_SLUG}_podcast.wav
+```
+
+---
+
+### Saturday (1 hr) — EDIT + UPLOAD
+
+Minimal editing + load to scheduler:
+
+```bash
+# Quick edit if needed (DaVinci Resolve can do bulk export)
+# No special effects needed — raw is fine
+
+# Load posts to database (triggers Publer CSV generation)
+python3 scripts/load_posts.py \
+  --slug {BLOG_SLUG} \
+  --video-path assets/video/edited/{DATE}_{BLOG_SLUG}_yt.mp4 \
+  --podcast-path assets/audio/{DATE}_{BLOG_SLUG}_podcast.wav \
+  --type video+podcast \
+  --publish-date $(date -d 'next Wednesday' +%Y-%m-%d)
+
+# Output: 
+# - Notion Contents DB updated with video + podcast entries
+# - Publer CSV regenerated with social posts
+# - Status: "Ready to publish"
+```
+
+---
+
+### Sunday (30 min) — SYNC + PREP
+
+Load Publer + prep next week's blog:
+
+```bash
+# 1. Check Publer CSV files generated
+ls -lh output/scheduled/publer_*.csv
+
+# 2. Manually import to Publer.io (one-time each week):
+# - Go to Publer.io dashboard
+# - Import: output/scheduled/publer_ig_fb.csv (select Instagram + Facebook)
+# - Import: output/scheduled/publer_threads.csv (select Threads)
+# - Verify dates + times, publish
+
+# 3. Verify scheduler is running
+ps aux | grep scheduler.py
+
+# 4. Select NEXT WEEK's Medium blog
+# - Pick from top unprocessed in data/analytics/medium-stats-all.json
+# - Save to: content/sources/{NEXT_BLOG}_medium.txt
+# - NOTE IT in Notion Contents DB (create entry with Status="Script")
+
+# 5. Check analytics on previous week's posts
+python3 scripts/collect_analytics.py
+cat data/analytics/weekly_insights.md
+```
+
+---
+
+## Blog Selection Order
+
+Run through these in order (avoids random picks, focuses on high engagement):
+
+**HIGH-ENGAGEMENT TIER (>10k views, 15 blogs):**
+```
+1. Data Preprocessing in Python (148k)
+2. Types of Data Sets (90k)
+3. Node.js Coding Style (65k)
+4. Data Preprocessing in Data Mining (49k)
+5. Measures of Proximity (49k)
+6. Continuous Data & Zero Frequency (25k)
+7. Structuring NodeJS API (25k)
+8. JavaScript Magical Tips (23k)
+9. Working with Spreadsheets Python (22k)
+10. Simple Linear Regression (16k)
+11. Decision Tree Classifier (16k)
+12. Node.js Tips (14k)
+13. Implementing Naive Bayes (13k)
+14. Assessing Quality of Data (12k)
+15. Indexing in Pandas.series (11k)
+```
+
+**MEDIUM TIER (1k–10k views, 18 blogs):**
+```
+Pick next 18 by views after HIGH tier completes
+```
+
+**LONG TAIL (if engagement warrants it):**
+```
+Only start after Phase 1 (30 blogs) ships + you measure performance
+```
+
+---
+
+## Weekly Checklist
+
+Print this for each week:
+
+```
+WEEK OF: ____________
+
+[ ] Thursday: Extract Medium blog + generate scripts (30 min)
+[ ] Friday: Record video (2 hrs) + podcast (1.5 hrs)
+[ ] Saturday: Edit + load posts to DB (1 hr)
+[ ] Sunday: Import Publer CSV + select next blog (30 min)
+
+Blog this week: _____________________
+Video filename: _____________________
+Podcast filename: ___________________
+Publish date: _______________________
+
+Notes:
+- Video target length: 8–10 min
+- Podcast target length: 12–15 min
+- Social posts generated: 4 (Twitter, Instagram, LinkedIn, Threads)
+- Scheduler running? YES / NO
+```
+
+---
+
+## Month 1 Output (4 weeks)
+
+| Week | Blog | Views | Video | Podcast | Social |
+|------|---|---|---|---|---|
+| 1 | Data Preprocessing | 148k | ✓ | ✓ | 4 posts |
+| 2 | Types of Data Sets | 90k | ✓ | ✓ | 4 posts |
+| 3 | Node.js Style | 65k | ✓ | ✓ | 4 posts |
+| 4 | Data Mining Preprocessing | 49k | ✓ | ✓ | 4 posts |
+| **Total** | **4 blogs** | **352k combined views** | **4 videos** | **4 episodes** | **16 posts** |
+
+Ship 4 YouTube videos + 4 podcast episodes + 16 social posts by end of May.
+
+---
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Ghostwriter script too long | Add `--max-words 2000` to truncate |
+| DaVinci Resolve export error | H.264 MP4, 1080p, 30fps, try H.265 if h.264 fails |
+| Podcast audio too quiet | Use Audacity Normalize (Effect → Normalize to -3dB) |
+| load_posts.py fails | Check: `python3 scripts/load_posts.py --validate` |
+| Publer CSV missing | Run: `python3 scripts/load_posts.py --generate-publer-csv` manually |
+| Scheduler not posting | Restart: `pkill scheduler.py && nohup python3 scripts/scheduler.py > data/analytics/scheduler.log 2>&1 &` |
+
+---
+
+## Files Output Summary
+
+| Day | Content Type | Output File | Publish Date |
+|-----|---|---|---|
+| 1–2 | YouTube | `assets/video/edited/2026-05-12_data_preprocessing_yt.mp4` | 2026-05-15 |
+| 1–2 | Podcast | `assets/audio/2026-05-12_data_preprocessing_podcast.wav` | 2026-05-16 |
+| 1–2 | Social (4 posts) | `content/derivatives/.../twitter_thread.txt` etc. | 2026-05-15–16 |
+| 3–4 | YouTube | `assets/video/edited/2026-05-13_types_datasets_yt.mp4` | 2026-05-16 |
+| 3–4 | Podcast | `assets/audio/2026-05-13_types_datasets_podcast.wav` | 2026-05-17 |
+| 3–4 | Social (4 posts) | `content/derivatives/.../...` | 2026-05-16–17 |
+| 5–6 | YouTube | `assets/video/edited/2026-05-14_nodejs_style_yt.mp4` | 2026-05-17 |
+| 5–6 | Podcast | `assets/audio/2026-05-14_nodejs_style_podcast.wav` | 2026-05-18 |
+| 5–6 | Social (4 posts) | `content/derivatives/.../...` | 2026-05-17–18 |
+| 7 | Publer CSV | `output/scheduled/publer_*.csv` | Import & publish |
+| 7 | YouTube uploads | Directly to @breathofdatascience/@breathoflife | Live |
+| 7 | Podcast episodes | Spotify/Anchor | Live |
+
+---
+
+## Key Reminders
+
+1. **Don't re-write.** Ghostwriter converts Medium → video/podcast script directly. Minimal editing.
+2. **Record raw.** Don't over-produce. Edit basic cuts in DaVinci Resolve, ship.
+3. **Reuse thumbnails.** Use existing Canva templates + AI prompt generator if needed.
+4. **Test one loop.** If Day 1–2 feels good, repeat Days 3–6 without changes.
+5. **Ship Day 7.** Don't delay uploads. Get content live by 2026-05-19.
+
+---
+
+## Troubleshooting
+
+| Issue | Fix |
+|-------|-----|
+| Ghostwriter script too long (10k+ words) | Use `--max-words 2000` flag to compress |
+| DaVinci Resolve export fails | Export as H.264 MP4, 1080p, 30fps |
+| Spotify upload timeout | Break audio into <15min segments |
+| Publer CSV import errors | Check CSV format: `python3 scripts/validate_csv.py output/scheduled/publer_*.csv` |
+| Scheduler not posting | Check: `tail -f data/analytics/scheduler.log` |
+
