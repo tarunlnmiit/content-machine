@@ -1,0 +1,125 @@
+{
+  "generated_from": "data/analytics/instagram_posts.json",
+  "total_posts_analysed": 90,
+  "format_breakdown": {
+    "reel": 60,
+    "single-image": 15,
+    "carousel": 15
+  },
+  "best_format_overall": "carousel",
+  "best_format_rationale": "Highest save-weighted engagement score (50.9439) vs reel: 28.0688, single-image: 7.8165",
+  "reel_avg_watch_time_seconds": 6.5,
+  "format_stats": {
+    "reel": {
+      "post_count": 60,
+      "avg_reach": 7.8,
+      "avg_saves": 4.38,
+      "avg_likes": 94.1,
+      "avg_shares": 0.0,
+      "avg_comments": 19.28,
+      "avg_engagement_score": 28.0688,
+      "top_posts": [
+        {
+          "permalink": "https://www.instagram.com/reel/CLBm-wcqVeC/",
+          "saves": 4,
+          "likes": 123,
+          "reach": 1,
+          "engagement_score": 145.0
+        },
+        {
+          "permalink": "https://www.instagram.com/reel/CK3VEZ8KpwL/",
+          "saves": 9,
+          "likes": 103,
+          "reach": 1,
+          "engagement_score": 144.0
+        },
+        {
+          "permalink": "https://www.instagram.com/reel/CKgLorrKts6/",
+          "saves": 10,
+          "likes": 213,
+          "reach": 2,
+          "engagement_score": 125.5
+        }
+      ]
+    },
+    "single-image": {
+      "post_count": 15,
+      "avg_reach": 9.7,
+      "avg_saves": 3.27,
+      "avg_likes": 51.9,
+      "avg_shares": 0.0,
+      "avg_comments": 6.87,
+      "avg_engagement_score": 7.8165,
+      "top_posts": [
+        {
+          "permalink": "https://www.instagram.com/p/CLrbTSTlWUX/",
+          "saves": 7,
+          "likes": 99,
+          "reach": 7,
+          "engagement_score": 20.2857
+        },
+        {
+          "permalink": "https://www.instagram.com/p/CLjmlV5FByU/",
+          "saves": 5,
+          "likes": 87,
+          "reach": 8,
+          "engagement_score": 15.5
+        },
+        {
+          "permalink": "https://www.instagram.com/p/CLhDrTAFULT/",
+          "saves": 5,
+          "likes": 95,
+          "reach": 11,
+          "engagement_score": 12.3636
+        }
+      ]
+    },
+    "carousel": {
+      "post_count": 15,
+      "avg_reach": 9.1,
+      "avg_saves": 6.47,
+      "avg_likes": 217.1,
+      "avg_shares": 0.0,
+      "avg_comments": 95.47,
+      "avg_engagement_score": 50.9439,
+      "top_posts": [
+        {
+          "permalink": "https://www.instagram.com/p/CPlBdfgoNDc/",
+          "saves": 2,
+          "likes": 308,
+          "reach": 7,
+          "engagement_score": 82.5714
+        },
+        {
+          "permalink": "https://www.instagram.com/p/CPx4CwSlxp9/",
+          "saves": 4,
+          "likes": 302,
+          "reach": 10,
+          "engagement_score": 81.2
+        },
+        {
+          "permalink": "https://www.instagram.com/p/CPauPS2I8E9/",
+          "saves": 9,
+          "likes": 231,
+          "reach": 7,
+          "engagement_score": 78.2857
+        }
+      ]
+    }
+  },
+  "niche_recommendations": {
+    "data_science_tech": {
+      "primary": "carousel",
+      "secondary": "reel"
+    },
+    "life_self_dev": {
+      "primary": "carousel",
+      "secondary": "reel"
+    },
+    "poetry_quotes": {
+      "primary": "reel",
+      "secondary": "single-image"
+    }
+  },
+  "repurposing_agent_instruction": "Default to 'carousel' format unless niche-specific override applies. See niche_recommendations for per-niche guidance. Carousels perform best for educational/step-by-step content. Single-image suits quote/poetry posts. Reels suit narrative or transformation arc content."
+}

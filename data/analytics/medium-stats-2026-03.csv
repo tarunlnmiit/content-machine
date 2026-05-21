@@ -1,0 +1,223 @@
+title,views,reads,read_ratio,earnings_usd,published_date,collection,url
+Data Preprocessing in Python,148387,43718,0.29,195.98,2019-08-24,TDS Archive,https://medium.com/data-science/data-preprocessing-in-python-b52b652e37d5
+"Types of Data Sets in Data Science, Data Mining & Machine Learning",90708,21731,0.24,92.4,2019-08-10,TDS Archive,https://medium.com/data-science/types-of-data-sets-in-data-science-data-mining-machine-learning-eb47c80af7a
+Node.js Coding Style Guidelines,65512,20284,0.31,263.14,2019-07-14,The Startup,https://medium.com/swlh/node-js-coding-style-guidelines-74a20d00c40b
+Data Preprocessing in Data Mining & Machine Learning,49899,10979,0.22,82.81,2019-08-20,TDS Archive,https://medium.com/data-science/data-preprocessing-in-data-mining-machine-learning-79a9662e2eb
+Measures of Proximity in Data Mining & Machine Learning,49811,11179,0.22,68.27,2019-08-18,TDS Archive,https://medium.com/data-science/measures-of-proximity-in-data-mining-machine-learning-e9baaed1aafb
+Continuous Data and Zero Frequency Problem in Naive Bayes Classifier,25880,7395,0.29,82.98,2020-10-07,TDS Archive,https://medium.com/data-science/continuous-data-and-zero-frequency-problem-in-naive-bayes-classifier-7784f4066b51
+Structuring a NodeJS API in an efficient way,25446,11102,0.44,202.72,2019-05-30,The Startup,https://medium.com/swlh/structuring-a-nodejs-api-in-an-efficient-way-72f7cbd27c57
+JavaScript’s Magical Tips Every Developer Should Remember,23526,9564,0.41,287.58,2019-07-20,The Startup,https://medium.com/swlh/javascripts-magical-tips-every-developer-should-remember-38c71b1cbfba
+Working with Spreadsheets using Python,22616,5755,0.25,213.59,2019-06-15,The Startup,https://medium.com/swlh/working-with-spreadsheets-using-python-903202509407
+Simple Linear Regression in Python,16627,5389,0.32,49.04,2019-09-03,TDS Archive,https://medium.com/data-science/simple-linear-regression-in-python-8cf596ac6a7c
+Understanding Decision Tree Classifier,16391,3319,0.2,36.91,2020-10-14,TDS Archive,https://medium.com/data-science/understanding-decision-tree-classifier-7366224e033b
+Node.js’ magical tips every developer should remember,14469,5488,0.38,41.44,2019-07-02,The Startup,https://medium.com/swlh/node-js-magical-tips-every-developer-should-remember-4c27b4dc6e2b
+Implementing a Naive Bayes Classifier,13492,3770,0.28,25.21,2020-10-08,TDS Archive,https://medium.com/data-science/implementing-a-naive-bayes-classifier-f206805a95fd
+Assessing the Quality of Data,12384,4939,0.4,43.6,2019-08-12,TDS Archive,https://medium.com/data-science/assessing-the-quality-of-data-e5e996a1681b
+Indexing Best Practices in Pandas.series,11343,3035,0.27,61.93,2019-10-22,TDS Archive,https://medium.com/data-science/indexing-best-practices-in-pandas-series-e455c7d2417
+Python Basics in Numpy for Machine Learning & Data Science,7008,1710,0.24,84.75,2019-10-28,DataSeries,https://medium.com/dataseries/python-basics-in-numpy-for-machine-learning-data-science-6641c8c3892f
+Performance Measures for Classification Models,7001,1862,0.27,16.15,2020-12-04,TDS Archive,https://medium.com/data-science/performance-measures-for-classification-models-a486c8976bf1
+Machine Learning Perceptron Implementation,6569,1991,0.3,14.14,2020-08-19,TDS Archive,https://medium.com/data-science/machine-learning-perceptron-implementation-b867016269ec
+Journey into Data Mining,6464,1856,0.29,35.06,2019-08-09,TDS Archive,https://medium.com/data-science/journey-into-data-mining-3b5ccfa5343
+(Batch) Linear Regression,3918,1155,0.29,14.75,2020-03-08,The Startup,https://medium.com/swlh/batch-linear-regression-75e7dd2ab28b
+Pandas.Series Methods for Machine Learning,3888,955,0.25,40.89,2019-10-25,TDS Archive,https://medium.com/data-science/pandas-series-methods-for-machine-learning-fd83709368ff
+How You Can Have Sustainably High Levels of Dopamine,3597,1674,0.47,18.59,2022-01-06,Curious,https://medium.com/curious/how-you-can-have-sustainably-high-levels-of-dopamine-f20af083342e
+"If You Are a Serious Poet, Stop Writing Poetry Online",3486,1123,0.32,140.77,2022-01-18,ILLUMINATION,https://medium.com/illumination/if-you-are-a-serious-poet-stop-writing-poetry-online-ca35ac100abb
+Understanding Naive Bayes Classifier,3297,851,0.26,14.34,2020-10-06,TDS Archive,https://medium.com/data-science/understanding-naive-bayes-classifier-46385aca47ec
+Types & Characteristics of Data Sets,2985,1440,0.48,0.49,2021-11-03,The Shortform,https://medium.com/the-shortform/types-characteristics-of-data-sets-3a53b312a56a
+Machine Learning Decision Tree Implementation,2550,965,0.38,20.07,2020-03-14,The Startup,https://medium.com/swlh/machine-learning-decision-tree-implementation-849df3ce36d2
+Similarity & Dissimilarity Measures,2208,1079,0.49,1.94,2021-11-05,The Shortform,https://medium.com/the-shortform/similarity-dissimilarity-measures-6858d3faac7a
+"How to Create a Smart Chatbot with Streamlit, Python, and ChatGPT",2134,741,0.35,11.58,2023-07-21,,https://tarun-gupta.medium.com/how-to-create-a-smart-chatbot-with-streamlit-python-and-chatgpt-56ab76508279
+Basics of Supervised Learning (Classification),1852,704,0.38,5.12,2020-10-05,TDS Archive,https://medium.com/data-science/basics-of-supervised-learning-classification-d26c00d80100
+Pandas.series : A Part of the backbone for Machine Learning in Python,1538,508,0.33,33.32,2019-11-22,DataSeries,https://medium.com/dataseries/pandas-series-a-part-of-the-backbone-for-machine-learning-in-python-861a5f889b73
+Implementing k-Means Clustering in 30 Lines with Optimization,1323,392,0.3,8.87,2021-08-27,DataDrivenInvestor,https://medium.datadriveninvestor.com/implementing-k-means-clustering-in-30-lines-with-optimization-44eb423368ec
+Zero Frequency Problem,1242,607,0.49,0.98,2021-11-26,The Shortform,https://medium.com/the-shortform/zero-frequency-problem-856d41b2d4c
+Are You Aspiring To Be Tim Denning or Zulie Rane?,1154,395,0.34,40.96,2021-11-16,ILLUMINATION,https://medium.com/illumination/are-you-aspiring-to-be-tim-denning-or-zulie-rane-ff4c61b85f89
+"What Is Neural Network Implementation, Anyway?",811,159,0.2,7.65,2021-02-14,TDS Archive,https://medium.com/data-science/what-is-neural-network-implementation-anyway-a37e108d0143
+Learn Python for Machine Learning,796,246,0.31,6.4,2020-03-10,The Startup,https://medium.com/swlh/learn-python-for-machine-learning-a468600b1bd0
+Write For Humans Are Stories,707,295,0.42,17.93,2021-07-30,Humans Are Stories,https://medium.com/humans-are-stories/write-for-humans-are-stories-331c335e504e
+The Power of Consistency,456,158,0.35,3.84,2021-03-01,Mind Cafe,https://medium.com/mind-cafe/the-power-of-consistency-efa1441af59b
+Longing for Love,443,157,0.35,0.79,2021-07-24,The Happy Human,https://medium.com/the-happy-human/longing-for-love-3c3d3dcf099d
+Discover and Download Unsplash Images with Streamlit and Python,408,123,0.3,3.95,2024-04-04,ILLUMINATION,https://medium.com/illumination/discover-and-download-unsplash-images-with-streamlit-and-python-71faf50b0170
+The Insanity of Mind While Hunting for a New Job,403,121,0.3,4.87,2019-07-09,The Startup,https://medium.com/swlh/the-insanity-of-mind-while-hunting-for-a-new-job-a1597380b4bd
+The Beginner’s Guide to Artificial Neural Networks,360,88,0.24,1.65,2021-03-21,DataDrivenInvestor,https://medium.datadriveninvestor.com/the-beginners-guide-to-artificial-neural-networks-36766bf0241c
+Upgrade Your Life with These Self-Help Books,321,106,0.33,9.36,2021-08-01,Books Are Our Superpower,https://baos.pub/upgrade-your-life-with-these-self-help-books-8d1fd67f2e0b
+I Wish I Had Known This Way to Process My Thoughts,306,170,0.56,7.82,2021-07-11,2 Minute Madness,https://medium.com/2-minute-madness/i-wish-i-had-known-this-way-to-process-my-thoughts-55b1e1cb7aa7
+I am on the Verge of Killing Myself,290,99,0.34,4.78,2021-10-30,Be Yourself,https://medium.com/life-tips/i-am-on-the-verge-of-killing-myself-6f915504927f
+"How Much Medium Paid Me for 100,000 Views",287,121,0.42,6.41,2022-01-08,ILLUMINATION,https://medium.com/illumination/how-much-medium-paid-me-for-100-000-views-d675ce5303d6
+Index: Poetry — Tarun Gupta,272,7,0.03,0.11,2021-07-10,,https://tarun-gupta.medium.com/index-poetry-tarun-gupta-afa1e0b8877
+Leverage Python and Selenium based Automation,268,80,0.3,3.56,2020-11-21,DataSeries,https://medium.com/dataseries/leverage-python-and-selenium-based-automation-56a92e707745
+You Came into My Life,250,87,0.35,0.07,2021-07-30,Humans Are Stories,https://medium.com/humans-are-stories/you-came-into-my-life-87da99cf7c51
+It’s Never Too Late to Start,250,78,0.31,2.69,2021-06-09,Blue Insights,https://medium.com/blueinsight/its-never-too-late-to-start-6fce6daefd0d
+Loneliness,249,84,0.34,0.24,2021-07-21,iPoetry,https://medium.com/ipoetry/loneliness-7ed39aa488d3
+A Fascinating Behind-the-Scenes Look at Clustering,246,70,0.28,1.55,2021-03-29,DataDrivenInvestor,https://medium.datadriveninvestor.com/a-fascinating-behind-the-scenes-look-at-clustering-fc2ab40bc3c5
+Intro to Neural Networks Implementation in Python,242,91,0.38,1.7,2022-03-13,,https://tarun-gupta.medium.com/intro-to-neural-networks-implementation-in-python-a3c867335f0
+I Feel Blue,217,65,0.3,0.54,2021-07-08,Weeds & Wildflowers,https://medium.com/weeds-wildflowers/i-feel-blue-3b4f9c78a543
+Existential Crisis,211,82,0.39,2.87,2021-07-12,Thoughts And Ideas,https://medium.com/indian-thoughts/existential-crisis-a5388f481ef2
+7 tools that will increase your productivity,205,69,0.34,1.19,2019-09-03,The Startup,https://medium.com/swlh/7-tools-that-will-increase-your-productivity-6f12122ea650
+Therapy Taught Me About Expectation Management,192,35,0.18,1.91,2021-07-22,An Injustice!,https://aninjusticemag.com/therapy-taught-me-about-expectation-management-4b7430af5fa
+How Morning Rituals Made Me Appreciate Life,182,65,0.36,7.71,2021-07-24,The Road to Wellness,https://medium.com/the-road-to-wellness/how-morning-rituals-made-me-appreciate-life-eaa6cad9fd54
+Become a Better Writer,171,73,0.43,4.53,2021-07-28,SYNERGY,https://medium.com/technical-excellence/become-a-better-writer-842c78f1cb0e
+About Me — Tarun Gupta,157,61,0.39,1.63,2021-11-05,About Me Stories,https://medium.com/about-me-stories/about-me-tarun-gupta-6ce0a8c95011
+Here’s My Secret Sauce on How to Be Consistent,156,33,0.21,3.33,2021-07-02,ILLUMINATION,https://medium.com/illumination/heres-my-secret-sauce-on-how-to-be-consistent-323d992ef7eb
+The Need For Closure,156,72,0.46,0.47,2021-06-11,Blue Insights,https://medium.com/blueinsight/the-need-for-closure-efb0df9ac475
+30-Day 30-Pubs Submission Challenge — The Results are Here!,153,32,0.21,1.97,2021-07-30,30-Day Challenge,https://medium.com/30-day-writing-challenges/30-day-30-pubs-submission-challenge-the-results-are-here-85e60128eefc
+Understanding Data for Data Science,151,53,0.35,0.47,2021-11-01,The Shortform,https://medium.com/the-shortform/understanding-data-for-data-science-78ed30134310
+How Being Stuck in a Situation Can Do Wonders,146,28,0.19,3.92,2021-07-21,Mind Cafe,https://medium.com/mind-cafe/how-being-stuck-in-a-situation-can-do-wonders-7addf97f09e3
+"Lonely, Not Alone",141,32,0.23,0.15,2021-12-20,ILLUMINATION,https://medium.com/illumination/lonely-not-alone-d88931a0029a
+What Matters: Process or Outcomes?,138,42,0.3,0.69,2021-07-20,CRY Magazine,https://medium.com/cry-mag/what-matters-process-or-outcomes-6c25469a241b
+Dream,130,37,0.28,0.02,2021-07-30,Humans Are Stories,https://medium.com/humans-are-stories/dream-489e16c78ded
+Why Being in a Caloric Deficit Is Not Enough to Lose Fat?,128,31,0.24,3.95,2022-03-28,ILLUMINATION,https://medium.com/illumination/why-being-in-a-caloric-deficit-is-not-enough-to-lose-fat-5886b3086b3
+What is Love? What is Hate?,127,31,0.24,0.37,2023-06-24,ILLUMINATION,https://medium.com/illumination/love-vs-hate-a-varied-exploration-of-human-relationships-83338fefce4d
+Rethink the Advice to “Follow Your Passion”,125,64,0.51,3.85,2019-06-09,The Startup,https://medium.com/swlh/is-follow-your-passion-really-the-best-advice-2aaea64d20c8
+Understanding Decision Trees in Machine Learning,120,40,0.33,0.17,2021-11-15,The Shortform,https://medium.com/the-shortform/understanding-decision-trees-in-machine-learning-3b6bf87ee0ca
+You Are Setting Yourself for Hurt by Expecting Help from Others,118,49,0.42,0.25,2022-03-21,,https://tarun-gupta.medium.com/you-are-setting-yourself-for-hurt-by-expecting-help-from-others-2f4f2bf14ea4
+"Index: Data Science, Programming — Tarun Gupta",118,16,0.14,0.07,2021-07-10,,https://tarun-gupta.medium.com/index-data-science-programming-tarun-gupta-d64c19325af2
+Intro to Data Preprocessing in Python,116,81,0.7,0.37,2021-11-09,The Shortform,https://medium.com/the-shortform/intro-to-data-preprocessing-in-python-68d3754cf7a2
+Struggling to Have Discipline? Try These Habits,113,50,0.44,1.59,2021-10-21,The Happy Human,https://medium.com/the-happy-human/struggling-to-have-discipline-try-these-habits-fca1d7af3d0c
+How Do You Know If It’s “True Love”,108,36,0.33,2.34,2021-11-12,Better Advice,https://medium.com/better-advice/how-do-you-know-if-its-true-love-d28ccb815555
+Intro to Machine Learning Performance Measures & Methods,106,49,0.46,0.44,2022-01-11,,https://tarun-gupta.medium.com/intro-to-machine-learning-performance-measures-methods-b556e1358acf
+Data Quality & Measurement Process Assessment,99,53,0.54,2.16,2021-11-03,The Shortform,https://medium.com/the-shortform/data-quality-measurement-process-assessment-4456fafa5594
+You People Have Misused My Good Nature,98,5,0.05,0.34,2021-11-01,Be Yourself,https://medium.com/life-tips/you-people-have-misused-my-good-nature-9d703508ad07
+No Regrets,98,35,0.36,0.12,2021-09-30,Humans Are Stories,https://medium.com/humans-are-stories/no-regrets-6a7d12a31e15
+The Costs of Vulnerability,97,50,0.52,0.43,2021-08-04,2 Minute Madness,https://medium.com/2-minute-madness/the-costs-of-vulnerability-718c25972775
+I Will Hug You till I Smell like You,96,25,0.26,0.08,2021-11-20,"Hello, Love",https://medium.com/hello-love/i-will-hug-you-till-i-smell-like-you-b1e7f7c98c4f
+Her Invisible Void,95,36,0.38,1.18,2021-07-30,Humans Are Stories,https://medium.com/humans-are-stories/her-invisible-void-8ef7c0d82ac5
+If I Fall in Love with You,95,38,0.4,0.27,2021-06-08,Blue Insights,https://medium.com/blueinsight/if-i-fall-in-love-with-you-3f49b0f6868e
+Intro to Naive Bayes Classifier in Python,90,36,0.4,0.63,2021-11-27,The Shortform,https://medium.com/the-shortform/intro-to-naive-bayes-classifier-in-python-e2b4c85002f9
+Life — A Scented Candle,87,40,0.46,0.42,2021-07-24,The Lark,https://medium.com/the-lark/life-a-scented-candle-399d306b1c86
+Learn Decision Tree Classifier,86,39,0.45,0.65,2021-12-19,,https://tarun-gupta.medium.com/learn-decision-tree-classifier-6d3e66f57e1
+This Is My Recipe for an Ideal Day in Life,86,33,0.38,1.09,2021-11-27,ILLUMINATION,https://medium.com/illumination/this-is-my-recipe-for-an-ideal-day-in-life-49f398906ba4
+I’m Submitting 30 Articles to 30 Pubs in 30 Days,83,18,0.22,0.92,2021-06-30,30-Day Challenge,https://medium.com/30-day-writing-challenges/30-articles-to-30-pubs-in-30-days-75ae27bcc671
+"Hello, Beautiful!",77,12,0.16,0.35,2022-01-02,,https://tarun-gupta.medium.com/hello-beautiful-a8be3d07f556
+Are You Stuck in an Unending Battle with Expectations,76,27,0.36,1.37,2021-07-26,The Candid Cuppa,https://medium.com/the-candid-cuppa/are-you-stuck-in-an-unending-battle-with-expectations-fee1c7b0eb3a
+A Storyteller’s Soul Trapped in the Body of a Data Scientist,73,7,0.1,0.43,2021-09-08,Be Yourself,https://medium.com/life-tips/a-storytellers-soul-trapped-in-the-body-of-a-data-scientist-3ae31d2c57f4
+Ghosts of My Mind,73,11,0.15,0.19,2021-07-09,"Know Thyself, Heal Thyself",https://medium.com/know-thyself-heal-thyself/ghosts-of-my-mind-dc946dd267b9
+Losing Hope,70,66,0.94,1.83,2021-08-04,iPoetry,https://medium.com/ipoetry/losing-hope-9654b2f01c37
+3 Essential Personalities of a Writer,68,24,0.35,0.21,2021-07-30,Humans Are Stories,https://medium.com/humans-are-stories/3-essential-personalities-of-a-writer-548987944387
+My Process to Define Goals,67,21,0.31,1.34,2021-07-26,The Road to Wellness,https://medium.com/the-road-to-wellness/my-process-to-define-goals-89599c8a4f6a
+"Poetry Prompt Contest: ""How did love make you feel?""",64,16,0.25,1.28,2021-12-01,Humans Are Stories,https://medium.com/humans-are-stories/poetry-prompt-contest-how-did-love-make-you-feel-2cdfb87e49e9
+The Path to Self-Realization: Recognizing Mistakes and Extending a Helping Hand,63,17,0.27,0.11,2024-04-04,Humans Are Stories,https://medium.com/humans-are-stories/the-path-to-self-realization-recognizing-mistakes-and-extending-a-helping-hand-7d024a03098c
+Understanding Batch Linear Regression,62,33,0.53,0.23,2021-11-14,The Shortform,https://medium.com/the-shortform/understanding-batch-linear-regression-f547899337ee
+Soulless Living,61,55,0.9,0.35,2021-08-03,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/soulless-living-d3e022ac6ffa
+"Index: Life Lessons, Mental Health, Advice & Opinion — Tarun Gupta",61,13,0.21,0.17,2021-07-10,,https://tarun-gupta.medium.com/index-life-lessons-mental-health-advice-opinion-tarun-gupta-ed0413374e53
+The rush chasing someone brings you,60,25,0.42,1.15,2020-09-18,Other Doors,https://medium.com/other-doors/the-rush-chasing-someone-brings-you-42aca783cfb6
+You Are Doing Substance Abuse,58,7,0.12,1.05,2021-07-29,Change Your Mind Change Your Life,https://medium.com/change-your-mind/you-are-doing-substance-abuse-d331b5371e7f
+Crafting Your Artistic Empire: Strategies for Success,57,20,0.35,1.04,2023-06-19,Books Are Our Superpower,https://baos.pub/crafting-your-artistic-empire-strategies-for-success-7574495a571e
+10 Tips from World-Renowned Writers That Will Make You the Best Version of Your Writer Self,57,12,0.21,1.66,2022-06-06,ILLUMINATION,https://medium.com/illumination/10-tips-from-world-renowned-writers-that-will-make-you-the-best-version-of-your-writer-self-18ca742d6bf
+My Angel,55,20,0.36,1.33,2021-07-08,The POM,https://medium.com/the-pom/my-angel-471d70e7b261
+I Published 73 Medium Stories in the Last 41 Days,54,21,0.39,2.38,2021-12-10,New Writers Welcome,https://medium.com/new-writers-welcome/i-published-73-medium-stories-in-the-last-41-days-3c846aecdd9c
+Wonder,54,37,0.69,0.15,2021-08-24,Humans Are Stories,https://medium.com/humans-are-stories/wonder-55e4bf474adb
+Senses,54,24,0.44,0.24,2021-08-01,Humans Are Stories,https://medium.com/humans-are-stories/senses-d22438fa565a
+Are You Stuck in an Unhealthy Friendship,54,20,0.37,1.1,2021-07-08,,https://tarun-gupta.medium.com/are-you-stuck-in-an-unhealthy-friendship-ccdf6ab8f9c8
+Humans Are Stories Is Evolving,53,16,0.3,0.45,2021-11-30,Humans Are Stories,https://medium.com/humans-are-stories/humans-are-stories-is-evolving-247b6fb06257
+Fundamental Terms of a Neural Network,53,28,0.53,0.29,2021-11-18,The Shortform,https://medium.com/the-shortform/fundamental-terms-of-a-neural-network-f4047c960bb2
+A Tale of Medium Milestones,53,14,0.26,1.11,2021-10-27,Feedium,https://medium.com/feedium/a-tale-of-medium-milestones-a9579bab78ff
+How Do You Define Love?,52,20,0.38,0.19,2022-04-20,Humans Are Stories,https://medium.com/humans-are-stories/how-do-you-define-love-76314d7b88c5
+Quick Links for Lists of Tagged Stories — Thank You for Visiting,52,20,0.38,0.06,2021-11-17,,https://tarun-gupta.medium.com/thank-you-for-visiting-my-profile-9f708062c75e
+100-and-Under Writers Are Also Welcome,52,19,0.37,0.25,2021-11-04,Humans Are Stories,https://medium.com/humans-are-stories/100-and-under-writers-are-also-welcome-18301b61b629
+Being Sober at a Drunk Party,51,21,0.41,0.33,2021-07-25,Unwritten Journal,https://medium.com/unwritten-journal/being-sober-at-a-drunk-party-be809ad3e376
+Failure Teaches You to Work Harder,51,15,0.29,0.81,2021-07-15,The Masterpiece,https://medium.com/the-masterpiece/failure-teaches-you-to-work-harder-e459fde3748c
+List of Methods Available for Indexing in Pandas.Series,50,26,0.52,0.09,2021-11-11,The Shortform,https://medium.com/the-shortform/list-of-methods-available-for-indexing-in-pandas-series-ef69d550b55d
+Choices or Abilities,50,18,0.36,0.28,2021-11-08,The Shortform,https://medium.com/the-shortform/choices-or-abilities-9954056d718a
+Intro to Naive Bayes Classifier,49,28,0.57,0.41,2021-11-25,The Shortform,https://medium.com/the-shortform/intro-to-naive-bayes-classifier-5e14415a0369
+Intro to Simple Linear Regression in Python,49,21,0.43,0.15,2021-11-10,The Shortform,https://medium.com/the-shortform/intro-to-simple-linear-regression-in-python-afb9f7c240f3
+Introduction to Conceptual Overview of Neural Networks,47,8,0.17,0.57,2022-11-12,,https://tarun-gupta.medium.com/introduction-to-conceptual-overview-of-neural-networks-bf78e3c7ef3e
+Hardships of Knowing Things,45,21,0.47,0.25,2021-07-13,Writers’ Blokke,https://medium.com/writers-blokke/hardships-of-knowing-things-747c9802d14c
+Bring Happiness into Your Life,45,15,0.33,0.02,2021-06-14,Blue Insights,https://medium.com/blueinsight/bring-happiness-into-your-life-e6aeabd58f8b
+Data Preprocessing Terms,44,14,0.32,0.11,2021-11-07,The Shortform,https://medium.com/the-shortform/data-preprocessing-terms-ccf3389d718
+Don’t Discard The Medium Referral Program,44,12,0.27,0.47,2021-11-03,ILLUMINATION,https://medium.com/illumination/dont-discard-the-medium-referral-program-8b781cff1564
+Stop Wailing! Keep Writing!,42,15,0.36,0.57,2021-11-05,,https://tarun-gupta.medium.com/stop-wailing-keep-writing-bf45ea7ec71e
+"Index: Productivity, Creativity, Inspiration, Writing — Tarun Gupta",42,5,0.12,0.14,2021-07-10,,https://tarun-gupta.medium.com/index-productivity-creativity-inspiration-writing-tarun-gupta-36ab41e0804d
+"6 Pieces of Advice to Remember You Are a Human Being, Not a Machine",41,17,0.41,0.58,2022-05-10,,https://tarun-gupta.medium.com/6-pieces-of-advice-to-remember-you-are-a-human-being-not-a-machine-f37d184a3126
+Lovable Idiots,40,14,0.35,0.45,2022-01-12,Humans Are Stories,https://medium.com/humans-are-stories/lovable-idiots-b94271018161
+The Worst Regret,40,15,0.38,0.43,2022-01-10,Humans Are Stories,https://medium.com/humans-are-stories/the-worst-regret-87b7fe111ea1
+Trickling Raindrops,40,18,0.45,0.42,2021-07-31,The Lark,https://medium.com/the-lark/trickling-raindrops-9c2c4739b59b
+Plea of a Bruised Soul,39,17,0.44,0.13,2022-01-03,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/plea-of-a-bruised-soul-fcd053eb4c7f
+This Unrequited Love,39,6,0.15,0.14,2021-10-19,"Know Thyself, Heal Thyself",https://medium.com/know-thyself-heal-thyself/this-unrequited-love-ee280efffe28
+Index: Other Favorites — Tarun Gupta,39,5,0.13,0.0,2021-07-10,,https://tarun-gupta.medium.com/index-other-favorites-tarun-gupta-cda4386187b3
+"If You Are a Writer, Stop Reading Stories About Success on Medium",38,11,0.29,0.42,2022-02-28,ILLUMINATION,https://medium.com/illumination/if-you-are-a-writer-stop-reading-stories-about-success-on-medium-dd1b11268a3a
+"Index: Self-Improvement, Personal Development, Self-Help, Motivation — Tarun Gupta",38,7,0.18,0.01,2021-07-10,,https://tarun-gupta.medium.com/index-self-improvement-personal-development-self-help-motivation-tarun-gupta-981b1f4b843e
+I Spent Every Day on Social Media for 6 Months,38,12,0.32,0.58,2021-07-06,Blue Insights,https://medium.com/blueinsight/i-spent-every-day-on-social-media-for-6-months-efc48178dc99
+Is Your Love on the Edge? Dive into Extreme Emotions with This Overthinker’s Marriage Guide,33,13,0.39,0.19,2023-10-18,,https://tarun-gupta.medium.com/a-practical-approach-to-marriage-for-overthinkers-b4d514a15f75
+“How did love make you feel?” Prompt Winner,33,14,0.42,0.17,2022-01-08,Humans Are Stories,https://medium.com/humans-are-stories/how-did-love-make-you-feel-prompt-winner-93082fa6087e
+Power of Subconscious Mind,32,8,0.25,0.07,2021-11-19,Humans Are Stories,https://medium.com/humans-are-stories/subconscious-2a0dfddbac8e
+Light at the End of the Tunnel,32,13,0.41,0.11,2021-10-14,Humans Are Stories,https://medium.com/humans-are-stories/light-at-the-end-of-the-tunnel-a51c046e272
+Nothingness Emptiness,32,20,0.62,0.18,2021-09-07,Blue Insights,https://medium.com/blueinsight/nothingness-emptiness-70be17a97737
+State of a Wandering Mind,32,20,0.62,0.21,2021-06-14,Blue Insights,https://medium.com/blueinsight/state-of-a-wandering-mind-dc383bceb8c7
+Importance is Subjective,31,11,0.35,0.02,2021-12-21,Humans Are Stories,https://medium.com/humans-are-stories/importance-is-subjective-3278c4f8911a
+Hurts like Inferno,29,13,0.45,0.31,2021-06-20,Blue Insights,https://medium.com/blueinsight/hurts-like-inferno-a31b7647ce1a
+Who Am I?,28,10,0.36,0.07,2021-11-15,The Shortform,https://medium.com/the-shortform/who-am-i-c2eed4ff54cf
+Tinder Works in Antarctica,28,19,0.68,0.09,2021-11-09,The Shortform,https://medium.com/the-shortform/tinder-works-in-antarctica-903f63659c5b
+What Are The Basics of Classification?,27,11,0.41,0.27,2021-11-23,The Shortform,https://medium.com/the-shortform/what-are-the-basics-of-classification-2bcea6de9ff0
+My Reconciliation with Writing,27,5,0.19,0.25,2021-10-28,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/my-reconciliation-with-writing-fbaa5aa622f6
+Whispers of the Deserted Mind || Routine,27,9,0.33,0.09,2021-07-30,Humans Are Stories,https://medium.com/humans-are-stories/routine-108e10aca67c
+The Inner Workings of My Creative Mind,27,8,0.3,0.4,2021-06-30,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/the-inner-workings-of-my-creative-mind-65ca5d3e4259
+Mindful Reactions: Harnessing the Power of Your Choices,26,3,0.12,0.03,2023-07-06,,https://tarun-gupta.medium.com/mindful-reactions-harnessing-the-power-of-your-choices-7c93e07b6c43
+Stories Are Forever,26,7,0.27,0.02,2022-01-11,Humans Are Stories,https://medium.com/humans-are-stories/stories-are-forever-8380d5f65b8c
+Hurting,25,28,1.12,0.27,2021-08-24,iPoetry,https://medium.com/ipoetry/hurting-5745dcc936a2
+Falling for Someone,24,11,0.46,0.2,2021-12-15,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/falling-for-someone-fcf8e09cbd76
+Why Do Big Publication Editors Maltreat Unpopular Writers?,23,6,0.26,0.23,2021-11-15,Humans Are Stories,https://medium.com/humans-are-stories/why-do-big-publication-editors-maltreat-unpopular-writers-5332b2c2b266
+Understand Basics of Python3,23,12,0.52,0.04,2021-11-14,The Shortform,https://medium.com/the-shortform/understand-basics-of-python3-d16f9d5d83eb
+No F**ks to Give,22,4,0.18,0.06,2021-10-21,The POM,https://medium.com/the-pom/no-f-ks-to-give-50ec968aecbd
+Heroes in Darkness,21,5,0.24,0.01,2021-12-13,Humans Are Stories,https://medium.com/humans-are-stories/heroes-in-darkness-585f26a60abb
+All There Is Left Is a Silhouette,21,7,0.33,0.26,2021-11-29,"Hello, Love",https://medium.com/hello-love/all-there-is-left-is-a-silhouette-e19747bec9a9
+"First Impressions, Last Impressions?",21,6,0.29,0.04,2021-11-19,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/impressions-d076827cd38c
+How Do You Define Hate?,20,9,0.45,0.08,2022-05-11,Humans Are Stories,https://medium.com/humans-are-stories/how-do-you-define-hate-aef6a328e066
+Intro to Pandas.Series,20,5,0.25,0.07,2021-11-13,The Shortform,https://medium.com/the-shortform/intro-to-pandas-series-93b277a4c9e6
+Protecting the Leftover Innocence,19,7,0.37,0.15,2021-12-04,The Happy Human,https://medium.com/the-happy-human/protecting-leftover-innocence-94caa708cbf8
+Chasing Love Is Destructive,19,6,0.32,0.07,2021-11-18,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/chasing-love-is-destructive-d8e6528e0e54
+Web Novels,19,12,0.63,0.08,2021-11-07,The Shortform,https://medium.com/the-shortform/web-novels-9b1a6f377331
+Getting Out of Comfort Zone,18,10,0.56,0.06,2021-12-10,Humans Are Stories,https://medium.com/humans-are-stories/getting-out-of-comfort-zone-6cec262c8b26
+Is This the Meaning of Life?,18,6,0.33,0.11,2021-11-20,Humans Are Stories,https://medium.com/humans-are-stories/is-this-the-meaning-of-life-dd41570677a6
+Lost,18,8,0.44,0.08,2021-10-19,Weeds & Wildflowers,https://medium.com/weeds-wildflowers/lost-3e05d42bb4c6
+Life Moves On,18,2,0.11,0.05,2021-10-18,Humans Are Stories,https://medium.com/humans-are-stories/life-moves-on-471dd88d65ca
+December’21 Quotes Prompt — Inspiration,17,2,0.12,0.13,2021-12-01,Humans Are Stories,https://medium.com/humans-are-stories/december21-quotes-prompt-inspiration-d7f9ceb64365
+Real vs. Instant Love,17,6,0.35,0.05,2021-11-29,The Shortform,https://medium.com/the-shortform/real-vs-instant-love-be8adcfea33a
+Good Things,16,5,0.31,0.08,2021-12-16,Humans Are Stories,https://medium.com/humans-are-stories/good-things-3c7eb691674c
+Fire of Hope,16,4,0.25,0.12,2021-12-14,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/fire-of-hope-3955dcad8057
+The Mighty Words,16,7,0.44,0.08,2021-12-01,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/the-mighty-words-339fc5399695
+Meaning of Perspective,16,6,0.38,0.03,2021-11-23,Humans Are Stories,https://medium.com/humans-are-stories/meaning-of-perspective-77c1344d466c
+A Tug of War over User Data,16,3,0.19,0.0,2021-11-14,The Shortform,https://medium.com/the-shortform/a-tug-of-war-over-user-data-9dceaa0d0b01
+My Happy Places Allow Me to Write and Read,16,6,0.38,0.03,2021-11-11,The Shortform,https://medium.com/the-shortform/my-happy-places-allow-me-to-write-and-read-63f92ca0a86b
+Making Job Hunt Efficient,16,7,0.44,0.04,2021-10-31,The Shortform,https://medium.com/the-shortform/making-job-hunt-efficient-9cd081dca20e
+Loving Is Not Easy,16,5,0.31,0.03,2021-10-18,Writers’ Blokke,https://medium.com/writers-blokke/loving-is-not-easy-3b56778e8be8
+Sarcasm and Its Complications,15,8,0.53,0.08,2021-12-04,Humans Are Stories,https://medium.com/humans-are-stories/sarcasm-and-its-complications-d48e79cf04cc
+Why Did You Have to Tell Me?,15,4,0.27,0.02,2021-11-28,Writers’ Blokke,https://medium.com/writers-blokke/why-did-you-have-to-tell-me-8affc040afd1
+Value of Patience,15,5,0.33,0.04,2021-11-22,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/value-of-patience-9c237973c7ef
+Express Yourself,14,4,0.29,0.02,2021-12-26,Humans Are Stories,https://medium.com/humans-are-stories/express-yourself-49c6d245ef06
+The Beauty of a Moment,14,4,0.29,0.03,2021-11-27,Humans Are Stories,https://medium.com/humans-are-stories/the-beauty-of-a-moment-ee2aac8e84b9
+Gratitude Journaling,14,8,0.57,0.04,2021-11-14,The Shortform,https://medium.com/the-shortform/gratitude-journaling-76a8ec868f4
+"Oh, Teenage Me!",14,6,0.43,0.01,2021-11-10,The Shortform,https://medium.com/the-shortform/oh-teenage-me-36ee96040baa
+Colors of Spring,14,6,0.43,0.17,2021-10-30,The Happy Human,https://medium.com/the-happy-human/colors-of-spring-23c1136a3028
+5 Strategies to Embrace Life’s Momentum and Thrive,13,1,0.08,0.01,2024-05-10,,https://tarun-gupta.medium.com/5-strategies-to-embrace-lifes-momentum-and-thrive-d5da65977647
+Introspective Sadness of Own Life,13,4,0.31,0.05,2021-11-22,The Lark,https://medium.com/the-lark/introspective-sadness-of-own-life-21a50d4aebc
+How Life Should Be,13,4,0.31,0.07,2021-08-24,The Lark,https://medium.com/the-lark/how-life-should-be-d2e529144358
+The Power of Breaks: Nurturing Creativity in a Nonstop World,12,0,0.0,0.0,2023-07-03,Humans Are Stories,https://medium.com/humans-are-stories/the-power-of-breaks-nurturing-creativity-in-a-nonstop-world-3c1b7414c6cd
+Value of Companionship,12,5,0.42,0.06,2021-12-11,Humans Are Stories,https://medium.com/humans-are-stories/value-of-companionship-c62cfadb17c8
+Relationships Are like a Clap,12,4,0.33,0.27,2021-12-06,Humans Are Stories,https://medium.com/humans-are-stories/relationships-are-like-a-clap-51df66a2251d
+Addiction to Pain,12,5,0.42,0.21,2021-11-28,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/addiction-to-pain-112b33c0c894
+Reality,12,12,1.0,0.09,2021-09-07,iPoetry,https://medium.com/ipoetry/reality-84057dd19889
+Roundup on 10-Day Shortform Challenge,11,7,0.64,0.02,2021-11-17,The Shortform,https://medium.com/the-shortform/roundup-on-10-day-shortform-challenge-496336009ac6
+Chaos of Trouble,10,4,0.4,0.0,2021-11-29,Humans Are Stories,https://medium.com/humans-are-stories/chaos-of-trouble-764365b45b38
+Devious Hope,9,3,0.33,0.04,2021-12-24,Humans Are Stories,https://medium.com/humans-are-stories/devious-hope-1dffb48549e1
+Moving On,9,3,0.33,0.0,2021-12-22,Humans Are Stories,https://medium.com/humans-are-stories/moving-on-a713a34a8117
+Emotional Spending,9,4,0.44,0.0,2021-12-16,Humans Are Stories,https://medium.com/humans-are-stories/emotional-spending-a5496ff1332
+Say Goodbye,9,4,0.44,0.0,2021-12-11,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/say-goodbye-e07eb3134459
+Whys of Lives,9,3,0.33,0.04,2021-11-25,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/whys-of-lives-6e9d3a764c1
+Flowing Mascara,9,2,0.22,0.07,2021-10-29,iPoetry,https://medium.com/ipoetry/flowing-mascara-e0059edc194c
+Value of Companionship,8,5,0.62,0.02,2021-12-23,Humans Are Stories,https://medium.com/humans-are-stories/value-of-companionship-21a4d6f3067e
+I Am Just a Human Being,8,3,0.38,0.04,2021-12-07,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/i-am-just-a-human-being-c626231e8d1
+Gift of Overthinking,8,5,0.62,0.01,2021-11-25,Humans Are Stories,https://medium.com/humans-are-stories/gift-of-overthinking-c73148450072
+6 Actions to Becoming a Better Writer,8,3,0.38,0.03,2021-11-12,The Shortform,https://medium.com/the-shortform/6-actions-to-becoming-a-better-writer-1031f58803d9
+Nonexistent Perfection,7,5,0.71,0.01,2021-12-17,Humans Are Stories,https://medium.com/humans-are-stories/nonexistent-perfection-b251afa906f7
+Why Is Closure Important?,7,3,0.43,0.04,2021-11-22,Humans Are Stories,https://medium.com/humans-are-stories/why-is-closure-important-9961cb6716c0
+The Day I Said No to a Party,7,5,0.71,0.06,2021-11-12,The Shortform,https://medium.com/the-shortform/the-day-i-said-no-to-a-party-eec9521b1b03
+Hyperdrive of Overthinking,6,2,0.33,0.0,2021-12-03,Humans Are Stories,https://medium.com/humans-are-stories/hyperdrive-of-overthinking-aadb9ea7b2a
+The Crucial Actions,5,2,0.4,0.0,2021-12-25,Humans Are Stories,https://medium.com/humans-are-stories/the-crucial-actions-6a9e3818177d
+Feedback is Crucial,4,4,1.0,0.0,2021-12-20,Humans Are Stories,https://medium.com/humans-are-stories/feedback-is-crucial-12c94e5d21ae
+In Denial,4,0,0.0,0.01,2021-12-13,Humans Are Stories,https://medium.com/humans-are-stories/in-denial-134de471a9ac
+The Feelings Truth Invokes,4,1,0.25,0.01,2021-12-04,The Brain is a Noodle,https://medium.com/the-brain-is-a-noodle/the-feelings-truth-invokes-e69ac315843a
+Simplest Hardest Things,4,1,0.25,0.0,2021-12-02,Humans Are Stories,https://medium.com/humans-are-stories/simplest-hardest-things-312ccf96c680
+Comfort and Change,4,3,0.75,0.05,2021-11-20,,https://tarun-gupta.medium.com/comfort-dc4abad6524b
+Sir Arthur Conan Doyle and I Are Having Tea,4,3,0.75,0.03,2021-11-13,The Shortform,https://medium.com/the-shortform/sir-arthur-conan-doyle-and-i-are-having-tea-b786749807b8
+Path to Knowing,3,1,0.33,0.02,2021-12-10,Humans Are Stories,https://medium.com/humans-are-stories/path-to-knowing-1773492a12e0

@@ -1,0 +1,741 @@
+Loading ideas from JSON files...
+Loaded 90 ideas
+Deduplicating...
+After dedup: 69 ideas
+Loading archive...
+Archive has 10 titles
+Applying novelty penalty...
+
+Processing data_science_tech...
+  Classifying: Best way to translate machine learning model in Py...
+Ollama error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+  Classifying: What is the scientific value of administering the ...
+Ollama error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+  Classifying: Topological Data Analysis-friendly CAD/3D point cl...
+Ollama error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+
+Processing life_self_dev...
+  Classifying: What small habits actually improved your day?...
+  Classifying: Why do most daily check-in habits fall apart after...
+  Classifying: What habits/hobbies do normal people have?...
+
+Processing poetry_quotes...
+  Classifying: [POEM] The End of Poetry by Ada Limón...
+  Classifying: [POEM] "Mann Bairagi" (The Wandering Mind) by Nida...
+  Classifying: [POEM] From 'Fall of a Tower' - Francis Berry...
+
+✓ Saved to data/ideas/weekly_ideas.md
+Loading ideas from JSON files...
+Loaded 135 ideas
+Deduplicating...
+After dedup: 97 ideas
+Loading archive...
+Archive has 10 titles
+Applying novelty penalty...
+
+Processing data_science_tech...
+  Classifying: Best way to translate machine learning model in Py...
+Ollama error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+  Classifying: What is the scientific value of administering the ...
+  Classifying: Topological Data Analysis-friendly CAD/3D point cl...
+
+Processing life_self_dev...
+  Classifying: What small habits actually improved your day?...
+  Classifying: Why do most daily check-in habits fall apart after...
+  Classifying: What habits/hobbies do normal people have?...
+
+Processing poetry_quotes...
+  Classifying: [POEM] The End of Poetry by Ada Limón...
+  Classifying: [POEM] "Mann Bairagi" (The Wandering Mind) by Nida...
+  Classifying: [POEM] From 'Fall of a Tower' - Francis Berry...
+
+✓ Saved to data/ideas/weekly_ideas.md
+Loading ideas from JSON files...
+Loaded 180 ideas
+Deduplicating...
+After dedup: 121 ideas
+Loading archive...
+Archive has 10 titles
+Applying novelty penalty...
+
+Processing data_science_tech...
+  Classifying: Best way to translate machine learning model in Py...
+Ollama error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+  Classifying: What is the scientific value of administering the ...
+Ollama error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+  Classifying: Topological Data Analysis-friendly CAD/3D point cl...
+
+Processing life_self_dev...
+  Classifying: What small habits actually improved your day?...
+  Classifying: What small daily habit has made the biggest differ...
+  Classifying: Why do most daily check-in habits fall apart after...
+
+Processing poetry_quotes...
+  Classifying: [POEM] The End of Poetry by Ada Limón...
+  Classifying: [POEM] "Mann Bairagi" (The Wandering Mind) by Nida...
+  Classifying: [POEM] From 'Fall of a Tower' - Francis Berry...
+
+✓ Saved to data/ideas/weekly_ideas.md
+Loading ideas from JSON files...
+Loaded 225 ideas
+Deduplicating...
+After dedup: 143 ideas
+Loading archive...
+Archive has 10 titles
+Applying novelty penalty...
+
+Processing data_science_tech...
+  Classifying: Best way to translate machine learning model in Py...
+Ollama error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+  Classifying: What is the scientific value of administering the ...
+Ollama error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+  Classifying: Topological Data Analysis-friendly CAD/3D point cl...
+
+Processing life_self_dev...
+  Classifying: What small habits actually improved your day?...
+  Classifying: What small daily habit has made the biggest differ...
+  Classifying: Why do most daily check-in habits fall apart after...
+
+Processing poetry_quotes...
+  Classifying: [POEM] The End of Poetry by Ada Limón...
+  Classifying: [POEM] "Mann Bairagi" (The Wandering Mind) by Nida...
+  Classifying: [POEM] From 'Fall of a Tower' - Francis Berry...
+
+✓ Saved to data/ideas/weekly_ideas.md
+Loading ideas from JSON files...
+Loaded 270 ideas
+Deduplicating...
+After dedup: 172 ideas
+Loading archive...
+Archive has 10 titles
+Applying novelty penalty...
+
+Processing data_science_tech...
+  Classifying: Best way to translate machine learning model in Py...
+Ollama error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+  Classifying: What is the scientific value of administering the ...
+Ollama error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+  Classifying: Topological Data Analysis-friendly CAD/3D point cl...
+Ollama error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+
+Processing life_self_dev...
+  Classifying: What small habits actually improved your day?...
+  Classifying: What small daily habit has made the biggest differ...
+  Classifying: Why do most daily check-in habits fall apart after...
+
+Processing poetry_quotes...
+  Classifying: [POEM] The End of Poetry by Ada Limón...
+Ollama error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+  Classifying: [POEM] "Mann Bairagi" (The Wandering Mind) by Nida...
+  Classifying: [POEM] From 'Fall of a Tower' - Francis Berry...
+
+✓ Saved to data/ideas/weekly_ideas.md
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+  Loaded 315 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 201 ideas                                ━━━━━━━━━━━━ 1/1 0:00:04
+  Archive has 7 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] From 'Fall of a Tower' - Francis  ━━━━━━━━━━━━ 9/9 0:00:00
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Best way to translate machine learning model in Python to SQL scr (1.880)
+    2. What is the scientific value of administering the standard Rorsch (1.559)
+    3. Topological Data Analysis-friendly CAD/3D point cloud dataset [P] (1.553)
+  life_self_dev:
+    1. Any motivational and disciplined books which I can read nowadays? (1.502)
+    2. What small habits actually improved your day? (1.298)
+    3. What small daily habit has made the biggest difference in your li (1.276)
+  poetry_quotes:
+    1. [POEM] The End of Poetry by Ada Limón (1.572)
+    2. [POEM] "Mann Bairagi" (The Wandering Mind) by Nida Fazli, transla (1.300)
+    3. [POEM] From 'Fall of a Tower' - Francis Berry (1.292)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+  Loaded 360 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 235 ideas                                ━━━━━━━━━━━━ 1/1 0:00:06
+  Archive has 7 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] "Mann Bairagi" (The Wandering Min ━━━━━━━━━━━━ 9/9 0:00:00
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. What is the scientific value of administering the standard Rorsch (1.559)
+  life_self_dev:
+    1. Any motivational and disciplined books which I can read nowadays? (1.502)
+    2. What small habits actually improved your day? (1.298)
+    3. What small daily habit has made the biggest difference in your li (1.276)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. [POEM] The End of Poetry by Ada Limón (1.572)
+    3. [POEM] "Mann Bairagi" (The Wandering Mind) by Nida Fazli, transla (1.300)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+  Loaded 405 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 265 ideas                                ━━━━━━━━━━━━ 1/1 0:00:07
+  Archive has 7 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] "Mann Bairagi" (The Wandering Min ━━━━━━━━━━━━ 9/9 0:00:09
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. What is the scientific value of administering the standard Rorsch (1.559)
+  life_self_dev:
+    1. Any motivational and disciplined books which I can read nowadays? (1.502)
+    2. What small habits actually improved your day? (1.298)
+    3. What small daily habit has made the biggest difference in your li (1.276)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. [POEM] The End of Poetry by Ada Limón (1.572)
+    3. [POEM] "Mann Bairagi" (The Wandering Mind) by Nida Fazli, transla (1.300)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 450 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 291 ideas                                ━━━━━━━━━━━━ 1/1 0:00:09
+  Archive has 7 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] "Mann Bairagi" (The Wandering Min ━━━━━━━━━━━━ 9/9 0:00:06
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. What is the scientific value of administering the standard Rorsch (1.559)
+  life_self_dev:
+    1. Any motivational and disciplined books which I can read nowadays? (1.502)
+    2. What small habits actually improved your day? (1.298)
+    3. What small daily habit has made the biggest difference in your li (1.276)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. [POEM] The End of Poetry by Ada Limón (1.572)
+    3. [POEM] "Mann Bairagi" (The Wandering Mind) by Nida Fazli, transla (1.300)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 490 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 317 ideas                                ━━━━━━━━━━━━ 1/1 0:00:12
+  Archive has 7 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] "Mann Bairagi" (The Wandering Min ━━━━━━━━━━━━ 9/9 0:00:09
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. What is the scientific value of administering the standard Rorsch (1.559)
+  life_self_dev:
+    1. Any motivational and disciplined books which I can read nowadays? (1.502)
+    2. What small habits actually improved your day? (1.298)
+    3. What small daily habit has made the biggest difference in your li (1.276)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. [POEM] The End of Poetry by Ada Limón (1.572)
+    3. [POEM] "Mann Bairagi" (The Wandering Mind) by Nida Fazli, transla (1.300)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 535 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 345 ideas                                ━━━━━━━━━━━━ 1/1 0:00:17
+  Archive has 7 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:01
+  Classifying: [POEM] "Mann Bairagi" (The Wandering Min ━━━━━━━━━━━━ 9/9 0:00:09
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. Building a document analysis app without AI — where to start ? (1.559)
+  life_self_dev:
+    1. Any motivational and disciplined books which I can read nowadays? (1.502)
+    2. What small habits actually improved your day? (1.298)
+    3. What small daily habit has made the biggest difference in your li (1.276)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. [POEM] The End of Poetry by Ada Limón (1.572)
+    3. [POEM] "Mann Bairagi" (The Wandering Mind) by Nida Fazli, transla (1.300)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 580 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 370 ideas                                ━━━━━━━━━━━━ 1/1 0:00:19
+  Archive has 7 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] "Mann Bairagi" (The Wandering Min ━━━━━━━━━━━━ 9/9 0:00:09
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. is this the right use of AI? I'm a undergrad student and trying t (1.567)
+  life_self_dev:
+    1. Any motivational and disciplined books which I can read nowadays? (1.502)
+    2. What small habits actually improved your day? (1.298)
+    3. The One Thing That Held Me Back From Success (1.277)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. [POEM] The End of Poetry by Ada Limón (1.572)
+    3. [POEM] "Mann Bairagi" (The Wandering Mind) by Nida Fazli, transla (1.300)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 625 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 392 ideas                                ━━━━━━━━━━━━ 1/1 0:00:21
+  Archive has 7 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] A Little Larger Than the Entire U ━━━━━━━━━━━━ 9/9 0:00:08
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. is this the right use of AI? I'm a undergrad student and trying t (1.567)
+  life_self_dev:
+    1. Any motivational and disciplined books which I can read nowadays? (1.502)
+    2. What small habits actually improved your day? (1.298)
+    3. is learning a language actually one of the best self improvement  (1.277)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. [POEM] The End of Poetry by Ada Limón (1.572)
+    3. [POEM] A Little Larger Than the Entire Universe by Fernando Pesso (1.566)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 670 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 417 ideas                                ━━━━━━━━━━━━ 1/1 0:00:22
+  Archive has 7 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] A Little Larger Than the Entire U ━━━━━━━━━━━━ 9/9 0:00:09
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. is this the right use of AI? I'm a undergrad student and trying t (1.567)
+  life_self_dev:
+    1. Any motivational and disciplined books which I can read nowadays? (1.502)
+    2. What small habits actually improved your day? (1.298)
+    3. is learning a language actually one of the best self improvement  (1.277)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. [POEM] The End of Poetry by Ada Limón (1.572)
+    3. [POEM] A Little Larger Than the Entire Universe by Fernando Pesso (1.566)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 715 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 442 ideas                                ━━━━━━━━━━━━ 1/1 0:00:17
+  Archive has 7 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] A Little Larger Than the Entire U ━━━━━━━━━━━━ 9/9 0:00:09
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. is this the right use of AI? I'm a undergrad student and trying t (1.567)
+  life_self_dev:
+    1. Any motivational and disciplined books which I can read nowadays? (1.502)
+    2. What small habits actually improved your day? (1.298)
+    3. is learning a language actually one of the best self improvement  (1.277)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. [POEM] The End of Poetry by Ada Limón (1.572)
+    3. [POEM] A Little Larger Than the Entire Universe by Fernando Pesso (1.566)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 760 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 465 ideas                                ━━━━━━━━━━━━ 1/1 0:00:19
+  Archive has 7 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] A Little Larger Than the Entire U ━━━━━━━━━━━━ 9/9 0:00:03
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. What kinds of models are people training with document data? [P] (1.855)
+  life_self_dev:
+    1. Any motivational and disciplined books which I can read nowadays? (1.502)
+    2. What small habits actually improved your day? (1.298)
+    3. is learning a language actually one of the best self improvement  (1.277)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. [POEM] The End of Poetry by Ada Limón (1.572)
+    3. [POEM] A Little Larger Than the Entire Universe by Fernando Pesso (1.566)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 805 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 490 ideas                                ━━━━━━━━━━━━ 1/1 0:00:21
+  Archive has 9 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] A Little Larger Than the Entire U ━━━━━━━━━━━━ 9/9 0:00:03
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. What kinds of models are people training with document data? [P] (1.855)
+  life_self_dev:
+    1. need help with discipline motivation and productivity (1.571)
+    2. Any motivational and disciplined books which I can read nowadays? (1.502)
+    3. What small habits actually improved your day? (1.298)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. [POEM] The End of Poetry by Ada Limón (1.572)
+    3. [POEM] A Little Larger Than the Entire Universe by Fernando Pesso (1.566)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 850 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 514 ideas                                ━━━━━━━━━━━━ 1/1 0:00:25
+  Archive has 9 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] A Little Larger Than the Entire U ━━━━━━━━━━━━ 9/9 0:00:02
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. What kinds of models are people training with document data? [P] (1.855)
+  life_self_dev:
+    1. need help with discipline motivation and productivity (1.571)
+    2. How I turned my habits into an “engine” to get me to my goals (1.556)
+    3. Any motivational and disciplined books which I can read nowadays? (1.502)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. [POEM] The End of Poetry by Ada Limón (1.572)
+    3. [POEM] A Little Larger Than the Entire Universe by Fernando Pesso (1.566)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 895 ideas                                      ━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 544 ideas                                ━━━━━━━━━━━━ 1/1 0:00:26
+  Archive has 9 titles                                  ━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                              ━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] A Little Larger Than the Entire U ━━━━━━━━━━━━ 9/9 0:00:02
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. What kinds of models are people training with document data? [P] (1.855)
+  life_self_dev:
+    1. need help with discipline motivation and productivity (1.571)
+    2. How to change my mindset/ return lost motivation? (1.563)
+    3. How I turned my habits into an “engine” to get me to my goals (1.556)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. [POEM] The End of Poetry by Ada Limón (1.572)
+    3. [POEM] A Little Larger Than the Entire Universe by Fernando Pesso (1.566)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 940 ideas                                   ━━━━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 574 ideas                             ━━━━━━━━━━━━━━━ 1/1 0:00:28
+  Archive has 8 titles                               ━━━━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                           ━━━━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] The End of Poetry by Ada Limón ━━━━━━━━━━━━━━━ 9/9 0:00:02
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. What kinds of models are people training with document data? [P] (1.855)
+  life_self_dev:
+    1. need help with discipline motivation and productivity (1.571)
+    2. How to change my mindset/ return lost motivation? (1.563)
+    3. How I turned my habits into an “engine” to get me to my goals (1.556)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2.  4 am poetry - Avinash (1.572)
+    3. [POEM] The End of Poetry by Ada Limón (1.572)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 985 ideas                                   ━━━━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 600 ideas                             ━━━━━━━━━━━━━━━ 1/1 0:00:33
+  Archive has 8 titles                               ━━━━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty                           ━━━━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying: [POEM] The End of Poetry by Ada Limón ━━━━━━━━━━━━━━━ 9/9 0:00:02
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. What kinds of models are people training with document data? [P] (1.855)
+  life_self_dev:
+    1. need help with discipline motivation and productivity (1.571)
+    2. How to change my mindset/ return lost motivation? (1.563)
+    3. How I turned my habits into an “engine” to get me to my goals (1.556)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2.  4 am poetry - Avinash (1.572)
+    3. [POEM] The End of Poetry by Ada Limón (1.572)
+───────────────────────────────── Idea Scorer ──────────────────────────────────
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+NIM error: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Loaded 1030 ideas                   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:00
+  After dedup: 629 ideas              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:35
+  Archive has 8 titles                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:00
+  Applying novelty penalty            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:00
+  Classifying:  4 am poetry - Avinash ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9/9 0:00:02
+
+✓ Saved to data/ideas/weekly_ideas.md
+  data_science_tech:
+    1. Complete Python Course 2026 | Beginner To Advance | Free Certific 
+(103.000)
+    2. Best way to translate machine learning model in Python to SQL scr (1.880)
+    3. What kinds of models are people training with document data? [P] (1.855)
+  life_self_dev:
+    1. need help with discipline motivation and productivity (1.571)
+    2. How to change my mindset/ return lost motivation? (1.563)
+    3. How I turned my habits into an “engine” to get me to my goals (1.556)
+  poetry_quotes:
+    1. LIVE Sand Art | Writing Your Names in Sand 🌟 Real-Time Drawing (30.000)
+    2. How to Write Dystopian Fiction | 30 min Guided Creative Writing S 
+(12.000)
+    3.  4 am poetry - Avinash (1.572)

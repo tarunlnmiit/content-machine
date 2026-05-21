@@ -1,0 +1,50 @@
+───────────────────────────── Analytics Collector ──────────────────────────────
+  YouTube        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4 0:00:11
+  Twitter        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:11
+  Instagram      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:11
+  Ollama summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:48
+
+✓ Saved: data/analytics/weekly_insights.md
+
+Summary:
+*   **Technical content is performing strongly:** The "Breath of Data Science" 
+channel generated 14,330 total views and achieved 760 views on its most recent 
+video ("How to Create a Smart Chatbot with Streamlit..."), indicating strong 
+audience interest in specific coding and data science tutorials.
+*   **Niche content struggles with engagement:** The "Breath of Life" and 
+"Breath of Poetry" channels show very low engagement; for example, recent videos
+on "Breath of Life" received views as low as 11 and 16, and zero likes or 
+comments.
+*   **Opportunity in technical structure:** The technical videos on Pandas 
+(e.g., "Indexing Best Practices Pandas Series") attracted 125 views and 6 likes,
+suggesting that content focused on specific, practical data manipulation 
+techniques resonates well.
+*   **Action required for growth:** Focus future content creation on the 
+successful technical niche, while investigating why lifestyle and poetry content
+views are not translating into viewer interaction.
+───────────────────────────── Analytics Collector ──────────────────────────────
+  NVIDIA NIM failed: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Ollama failed: Ollama HTTP 404
+  YouTube        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4 0:00:20
+  Twitter        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:20
+  Instagram      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:20
+  Ollama summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:21
+
+✓ Saved: data/analytics/weekly_insights.md
+
+Summary:
+Summary unavailable — all backends failed.
+───────────────────────────── Analytics Collector ──────────────────────────────
+  NVIDIA NIM failed: NIM HTTP 403: 
+{"status":403,"title":"Forbidden","detail":"Authorization failed"}
+  Ollama failed: Ollama HTTP 404
+  YouTube        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4 0:00:06
+  Twitter        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:06
+  Instagram      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:06
+  Ollama summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:07
+
+✓ Saved: data/analytics/weekly_insights.md
+
+Summary:
+Summary unavailable — all backends failed.

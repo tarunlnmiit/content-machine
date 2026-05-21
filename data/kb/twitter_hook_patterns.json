@@ -1,0 +1,111 @@
+{
+  "generated_from": "twitter_mistakenlyhuman_tweets.json",
+  "account": "@mistakenlyhuman",
+  "top_tweets_analyzed": 50,
+  "scoring_method": "likes*3 + retweets*2 + replies + views*0.01",
+  "categories": [
+    {
+      "id": 1,
+      "name": "Contrarian Mirror",
+      "description": "Opens with an uncomfortable truth or observation that challenges how most people see themselves or the world. Creates friction — reader must respond.",
+      "engagement_signal": "Highest likes+RT combo (L:10 RT:6). Tension = engagement.",
+      "pattern": "[Unexpected observation about human behaviour]. [Why it's uncomfortable.] [The truth underneath.]",
+      "examples": [
+        "It is like they are looking at themselves in a rear-view mirror. It is not a fun site to watch for most of us. Truths of life threaten the bubble world",
+        "People who talk about such truths are not popular in their social circle because of the very same reason, and I have experienced that.",
+        "Somebody once said, 'Unless you are not famous, nobody will listen to you.' It is difficult to get people to listen to you."
+      ],
+      "use_for": ["life", "poetry"]
+    },
+    {
+      "id": 2,
+      "name": "Bold Declaration",
+      "description": "Short, loud statement — often ALL CAPS or punchy imperative. No context, no softening. Forces the reader to either agree or push back.",
+      "engagement_signal": "L:5 RT:4 — strong RT ratio means people share declarations.",
+      "pattern": "[BOLD CLAIM IN CAPS OR SHORT SENTENCE]. [One-line explanation.] [The specific angle you're taking.]",
+      "examples": [
+        "HOW NOT TO LOSE YOUR PASSION\n\nThe goal is not to be in the top 1% but to be 1% unique.",
+        "Be 1% Unique.",
+        "Make your dreams a reality."
+      ],
+      "use_for": ["life", "ds"]
+    },
+    {
+      "id": 3,
+      "name": "Universal Truth + Consequence",
+      "description": "States a widely accepted truth then extends it to an uncomfortable or motivating consequence. Creates implicit agreement before the main point lands.",
+      "engagement_signal": "Consistent L:6-8 RT:1-2 across multiple tweets — reliable mid-tier performer.",
+      "pattern": "[Universally true statement]. [Nobody [successful/happy/growing] does X.] [Therefore...]",
+      "examples": [
+        "In order to grow, the changes need embracing. Nobody successful will ever say that they achieved those heights by being in the comfort zone.",
+        "The only thing constant in life is change. If we avoid it and decide to live in the comfort zone only, then we will get left behind.",
+        "We are always terrified of change but we should know that the only thing constant in life is change."
+      ],
+      "use_for": ["life", "ds", "poetry"]
+    },
+    {
+      "id": 4,
+      "name": "Ellipsis / Continuation Hook",
+      "description": "Sentence starts mid-thought or ends with '…' — signals a story already in motion. Reader must click to get resolution.",
+      "engagement_signal": "L:5 RT:2-3 — above-average RT, suggests curiosity-driven shares.",
+      "pattern": "[Statement that implies backstory]…\n\n[The actual point.]",
+      "examples": [
+        "But in hindsight, we don't realise that sometimes; it takes a while to get the right someone and all we are doing is…",
+        "Being human is a complex thing, we are always in the journey of discovering ourselves. After all …\n\nSometimes the worst of the situations can bring the best out of us.",
+        "Life is all about change, there is nothing certain in life but…\n\nThe only constant thing life teaches you is that it isn't fair.",
+        "Life moves on one step at a time\nNothing comes easy in life. One can only #aspire to do simple things but…\n\nThe simplest things are the hardest to do"
+      ],
+      "use_for": ["life", "poetry"]
+    },
+    {
+      "id": 5,
+      "name": "Open Question / Redefinition",
+      "description": "Poses a question that seems answered but isn't, then redefines the concept. Works well for abstract topics — success, happiness, identity.",
+      "engagement_signal": "L:5 RT:2 — strong for abstract content.",
+      "pattern": "And to be honest, what is [concept]?\n\n[Why the common definition is wrong.] [Your redefinition.]",
+      "examples": [
+        "And to be honest, what is success?\n\nThere is no hard and fast-defined definition for success.\n\nYou make your own definitions of success. Or do you?",
+        "Does anyone else get these sort of episodes where you need to organize and clean everything in your apartment, on your computer, and on your desk before you can start working?"
+      ],
+      "use_for": ["life", "ds", "poetry"]
+    },
+    {
+      "id": 6,
+      "name": "Protective Imperative",
+      "description": "Frames an abstract virtue (dreams, hope, passion) using a visceral protective metaphor — like protecting a child. Triggers emotional commitment.",
+      "engagement_signal": "L:7 RT:0, L:5 RT:1 — high likes, lower RT. Resonates personally, shared less publicly.",
+      "pattern": "[The most important thing I learned is] [X]. Protect [abstract noun] like you will protect [visceral thing].",
+      "examples": [
+        "The most important thing I have learned is to be fearless when it comes to your dreams. Protect your dreams like you will protect your child.",
+        "If we are not hopeful for anything to succeed, then we won't try it. Let no one else extinguish that fire of hope within you. Protect your hope like you protect your most prized possession."
+      ],
+      "use_for": ["life", "poetry"]
+    },
+    {
+      "id": 7,
+      "name": "Data / Mechanism Opener",
+      "description": "Leads with a factual claim or technical insight. Signals authority. Works for DS/Tech content — reader assumes you know what you're talking about.",
+      "engagement_signal": "L:5 RT:0 — lower RT but targeted likes from technical audience.",
+      "pattern": "[Technical concept] is [the key/the secret/what separates] [outcome]. [Specific mechanism]. [Invitation to learn more.]",
+      "examples": [
+        "Data Preprocessing is the key to unlocking valuable insights in #DataMining & #MachineLearning! Let's dive into the concepts together and level up our data skills.",
+        "Your physical state is determined by what you eat. The mental state is determined by what you think. The growth in life is determined by what you do."
+      ],
+      "use_for": ["ds"]
+    },
+    {
+      "id": 8,
+      "name": "Social Proof Inversion",
+      "description": "Acknowledges a shared failure or absurd truth about the human condition — then pivots to action. Builds instant relatability through honesty about imperfection.",
+      "engagement_signal": "L:5 RT:3 — strong RT. People share things that express what they feel but won't say.",
+      "pattern": "I [embarrassing/relatable admission]. [Why that's actually okay.] [What to do instead.]",
+      "examples": [
+        "I dreamed that I went viral within the #WritingCommnunity but then I woke up to face the reality.\n\nI hope fellow writers help me go a bit viral by retweeting this.",
+        "Keep showing up, show your work to the world. If you are out there every single day, and shout out what you have to say, eventually, they will hear you.",
+        "We must separate ourselves from the herd in order to get heard. We must stand out of the crowd to make a mark on the world."
+      ],
+      "use_for": ["life", "ds", "poetry"]
+    }
+  ],
+  "notes": "Views data unreliable for older tweets (scraped as 'View' string). Scoring based on likes + retweets only for those. Patterns reflect account's actual voice — analytical-but-warm, self-development focus, honest vulnerability."
+}

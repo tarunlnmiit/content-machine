@@ -1,0 +1,86 @@
+{
+  "scraped_at": "2026-05-14T15:37:23.544206",
+  "total_hashtags": 12,
+  "by_niche": {
+    "data_science_tech": {
+      "count": 1,
+      "hashtags": [
+        {
+          "hashtag": "python",
+          "niche": "data_science_tech",
+          "scraped_at": "2026-05-14T15:36:38.265948"
+        }
+      ]
+    },
+    "life_self_dev": {
+      "count": 3,
+      "hashtags": [
+        {
+          "hashtag": "productivityhacks",
+          "niche": "life_self_dev",
+          "scraped_at": "2026-05-14T15:36:44.252091"
+        },
+        {
+          "hashtag": "motivation",
+          "niche": "life_self_dev",
+          "scraped_at": "2026-05-14T15:36:54.704584"
+        },
+        {
+          "hashtag": "wellness",
+          "niche": "life_self_dev",
+          "scraped_at": "2026-05-14T15:37:01.704904"
+        }
+      ]
+    },
+    "poetry_quotes": {
+      "count": 1,
+      "hashtags": [
+        {
+          "hashtag": "poetry",
+          "niche": "poetry_quotes",
+          "scraped_at": "2026-05-14T15:37:11.302227"
+        }
+      ]
+    }
+  },
+  "unclassified": {
+    "count": 7,
+    "hashtags": [
+      {
+        "hashtag": "technology",
+        "niche": null,
+        "scraped_at": "2026-05-14T15:36:36.369366"
+      },
+      {
+        "hashtag": "machinelearning",
+        "niche": null,
+        "scraped_at": "2026-05-14T15:36:40.218581"
+      },
+      {
+        "hashtag": "artificialintelligence",
+        "niche": null,
+        "scraped_at": "2026-05-14T15:36:42.144332"
+      },
+      {
+        "hashtag": "selfimprovement",
+        "niche": null,
+        "scraped_at": "2026-05-14T15:36:46.588127"
+      },
+      {
+        "hashtag": "quotes",
+        "niche": null,
+        "scraped_at": "2026-05-14T15:37:15.365925"
+      },
+      {
+        "hashtag": "creativeart",
+        "niche": null,
+        "scraped_at": "2026-05-14T15:37:17.025570"
+      },
+      {
+        "hashtag": "writersofinstagram",
+        "niche": null,
+        "scraped_at": "2026-05-14T15:37:23.541640"
+      }
+    ]
+  }
+}
