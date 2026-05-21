@@ -1,0 +1,48 @@
+{
+  "worksheets": {
+    "2026-05-12_data_science_tech_ml-model-sql-translation": {
+      "niche": "data_science",
+      "title": "Your Model → SQL Translation Checklist",
+      "worksheet_type": "conversion_guide",
+      "engage_potential": "high",
+      "enable": true,
+      "convertkit": {
+        "landing_page_id": null,
+        "landing_page_url": "https://colossal-hustler-1290.kit.com/9149365fd7",
+        "description": "Free worksheet: translate your ML model to warehouse SQL. No API server required.",
+        "tags": ["data-science", "ml-production", "sql"]
+      },
+      "ig_caption_hook": "📋 Get the checklist below — walk through your model translation step by step. No experience required.",
+      "ig_cta": "Comment: what model are you translating first? I'll help debug."
+    },
+    "2026-05-13_life_self_dev_why-do-most-daily-check-in-habits-fall-apart-after-a-few-day": {
+      "niche": "life_self_dev",
+      "title": "Design Your Check-in for Your Worst Day",
+      "worksheet_type": "design_template",
+      "engage_potential": "very_high",
+      "enable": true,
+      "convertkit": {
+        "landing_page_id": null,
+        "landing_page_url": "https://colossal-hustler-1290.kit.com/505214b8cd",
+        "description": "Free worksheet: redesign your daily habit for the version of you who's tired, busy, and low-energy.",
+        "tags": ["habits", "self-development", "design"]
+      },
+      "ig_caption_hook": "📝 Grab the worksheet — it walks you through designing a check-in that works on your WORST day, not your best.",
+      "ig_cta": "Reply: what's your minimum version? Let's stress-test it."
+    },
+    "2026-05-14_poetry_quotes_the-end-of-poetry-by-ada-limó": {
+      "niche": "poetry",
+      "title": null,
+      "worksheet_type": null,
+      "engage_potential": null,
+      "enable": false,
+      "reason": "Commentary/reflection format — not suitable for worksheets"
+    }
+  },
+  "defaults": {
+    "convertkit_api_key_env": "CONVERTKIT_API_KEY",
+    "form_description_template": "Free {worksheet_type} from: {blog_title}",
+    "email_cta_template": "Click the link in your email to download your {worksheet_title}. Reply to questions in comments.",
+    "redownload_url_expiry_days": 30
+  }
+}

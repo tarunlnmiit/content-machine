@@ -1,0 +1,97 @@
+DATA SCIENCE WORKSHEET LANDING PAGE — COPY VARIATIONS
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+HEADLINE OPTIONS:
+
+1. "Turn Your Model into Production SQL" (primary)
+2. "From Notebook to Database: The SQL Translation Guide"
+3. "Your Model → SQL Pipeline: Step-by-Step Checklist"
+4. "Stop Guessing. Start Shipping: ML-to-SQL Playbook"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SUBHEADLINE OPTIONS:
+
+1. "A practical checklist from model training to production" (professional)
+2. "The 7-step process used by data engineers at Fortune 500 companies"
+3. "Everything you need to ship your model without breaking production"
+4. "Avoid the 5 mistakes that cost engineering teams weeks"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BODY TEXT OPTIONS:
+
+Option A (Trust + Specificity):
+"You've trained the model. Now what? This 7-page worksheet walks you through the exact steps to translate machine learning predictions into optimized SQL queries—without breaking your database or frustrating your engineers.
+
+Used by data teams at [Company], [Company], and [Company]. Updated for 2026 best practices."
+
+Option B (Problem → Solution):
+"ML in production isn't just about accuracy. It's about speed, cost, and reliability. Most data scientists spend weeks figuring out how to deploy models because the gap between Python and SQL feels massive.
+
+This worksheet closes that gap. Step-by-step."
+
+Option C (Benefit-Focused):
+"Ship faster. Break less. Deploy with confidence. This checklist has helped 2,000+ data scientists avoid the most common SQL translation mistakes.
+
+Includes: Model-to-SQL mapping template | Common pitfalls | Performance tuning checklist | Validation playbook"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CTA BUTTON TEXT:
+
+1. "Get the Checklist" (primary, action-focused)
+2. "Download Free Worksheet"
+3. "Download Now (Free)"
+4. "Send Me the Checklist"
+
+SUPPORTING TEXT ABOVE FORM:
+"Get the worksheet + bonus SQL migration checklist"
+
+SUPPORTING TEXT BELOW FORM:
+"Join 2,000+ data engineers. No spam, unsubscribe anytime."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TESTIMONIAL/SOCIAL PROOF OPTIONS:
+
+Option A (Specific):
+"Saved us 40 hours of debugging. The validation section alone is worth it."
+— Senior Data Engineer, [Company]
+
+Option B (Quantified):
+"Reduced our model-to-production time from 6 weeks to 2 weeks."
+— ML Engineering Lead, [Company]
+
+Option C (Emotional):
+"Finally, a guide that speaks our language. Not overly theoretical, actually useful."
+— Data Science Manager, [Company]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FOOTER TEXT OPTIONS:
+
+Short:
+"By [Your Name] • Data Science + ML Production"
+
+Medium:
+"By [Your Name] • Weekly insights on shipping ML systems in production"
+
+Long:
+"By [Your Name] • 10-year data scientist • I write about translating research into production ML. Join 5,000+ engineers."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BENEFIT CALLOUTS (use 3-4):
+
+✓ 7-page step-by-step checklist
+✓ SQL translation templates
+✓ Common mistakes + fixes
+✓ Performance optimization guide
+✓ Validation playbook
+✓ Used by 2,000+ data engineers
+✓ Updated for 2026 best practices
+✓ Free forever access
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
