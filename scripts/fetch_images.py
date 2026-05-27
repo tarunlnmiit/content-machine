@@ -37,22 +37,56 @@ from _console import console, progress_bar
 REPO = Path(__file__).parent.parent
 load_dotenv(REPO / ".env")
 
-PEXELS_API = "https://api.pexels.com/v1/search"
-BLOGS_DIR  = REPO / "content" / "blogs"
+PEXELS_API   = "https://api.pexels.com/v1/search"
+PIXABAY_API  = "https://pixabay.com/api/"
+UNSPLASH_API = "https://api.unsplash.com/search/photos"
+BLOGS_DIR    = REPO / "content" / "blogs"
 
 # Matches [IMAGE_INSERT: description] or [IMAGE_INSERT: description | caption]
 MARKER_RE = re.compile(r'\[IMAGE_INSERT:\s*([^\]|]+?)(?:\s*\|\s*([^\]]+))?\s*\]')
 
 
-def get_pexels_key() -> str:
-    key = os.getenv("PEXELS_API_KEY")
-    if not key:
-        sys.exit("PEXELS_API_KEY not set in .env")
-    return key
+def get_pexels_key() -> str | None:
+    return os.getenv("PEXELS_API_KEY")
+
+
+def get_pixabay_key() -> str | None:
+    return os.getenv("PIXABAY_API_KEY")
+
+
+def get_unsplash_key() -> str | None:
+    return os.getenv("UNSPLASH_ACCESS_KEY")
+
+
+def _normalize_pexels(photo: dict) -> dict:
+    return {
+        "download_url": photo["src"]["large"],
+        "page_url": photo.get("url", ""),
+        "photographer": photo.get("photographer", "Pexels"),
+        "source": "Pexels",
+    }
+
+
+def _normalize_pixabay(hit: dict) -> dict:
+    return {
+        "download_url": hit.get("largeImageURL", hit.get("webformatURL", "")),
+        "page_url": hit.get("pageURL", ""),
+        "photographer": hit.get("user", "Pixabay"),
+        "source": "Pixabay",
+    }
+
+
+def _normalize_unsplash(photo: dict) -> dict:
+    return {
+        "download_url": photo["urls"]["regular"],
+        "page_url": photo["links"]["html"],
+        "photographer": photo["user"]["name"],
+        "source": "Unsplash",
+    }
 
 
 def search_pexels(query: str, api_key: str) -> dict | None:
-    """Return best matching photo dict or None."""
+    """Return normalized photo dict or None."""
     try:
         resp = requests.get(
             PEXELS_API,
@@ -62,15 +96,79 @@ def search_pexels(query: str, api_key: str) -> dict | None:
         )
         resp.raise_for_status()
         photos = resp.json().get("photos", [])
-        return photos[0] if photos else None
+        return _normalize_pexels(photos[0]) if photos else None
     except Exception as e:
         console.print(f"  [warn]Pexels search error for '{query}': {e}[/warn]")
         return None
 
 
+def search_pixabay(query: str, api_key: str) -> dict | None:
+    """Return normalized photo dict or None."""
+    try:
+        resp = requests.get(
+            PIXABAY_API,
+            params={
+                "key": api_key,
+                "q": query,
+                "image_type": "photo",
+                "orientation": "horizontal",
+                "per_page": 5,
+                "safesearch": "true",
+            },
+            timeout=10,
+        )
+        resp.raise_for_status()
+        hits = resp.json().get("hits", [])
+        return _normalize_pixabay(hits[0]) if hits else None
+    except Exception as e:
+        console.print(f"  [warn]Pixabay search error for '{query}': {e}[/warn]")
+        return None
+
+
+def search_unsplash(query: str, api_key: str) -> dict | None:
+    """Return normalized photo dict or None."""
+    try:
+        resp = requests.get(
+            UNSPLASH_API,
+            headers={"Authorization": f"Client-ID {api_key}"},
+            params={"query": query, "per_page": 5, "orientation": "landscape"},
+            timeout=10,
+        )
+        resp.raise_for_status()
+        results = resp.json().get("results", [])
+        return _normalize_unsplash(results[0]) if results else None
+    except Exception as e:
+        console.print(f"  [warn]Unsplash search error for '{query}': {e}[/warn]")
+        return None
+
+
+def find_photo(
+    query: str,
+    pexels_key: str | None,
+    pixabay_key: str | None,
+    unsplash_key: str | None,
+) -> dict | None:
+    """Try Pexels → Pixabay → Unsplash."""
+    if pexels_key:
+        photo = search_pexels(query, pexels_key)
+        if photo:
+            return photo
+    if pixabay_key:
+        photo = search_pixabay(query, pixabay_key)
+        if photo:
+            console.print(f"  [info]Pixabay fallback for: {query[:40]}[/info]")
+            return photo
+    if unsplash_key:
+        photo = search_unsplash(query, unsplash_key)
+        if photo:
+            console.print(f"  [info]Unsplash fallback for: {query[:40]}[/info]")
+            return photo
+    return None
+
+
 def download_image(photo: dict, dest_path: Path) -> bool:
-    """Download medium-size image to dest_path."""
-    url = photo["src"]["large"]
+    """Download image to dest_path using normalized photo dict."""
+    url = photo["download_url"]
     try:
         resp = requests.get(url, timeout=30, stream=True)
         resp.raise_for_status()
@@ -197,12 +295,18 @@ def main():
             console.print(f"  {i}. {desc.strip()}{cap_display}")
         return
 
-    api_key = get_pexels_key()
+    pexels_key   = get_pexels_key()
+    pixabay_key  = get_pixabay_key()
+    unsplash_key = get_unsplash_key()
+    if not pexels_key and not pixabay_key and not unsplash_key:
+        sys.exit("No image API key set — need PEXELS_API_KEY, PIXABAY_API_KEY, or UNSPLASH_ACCESS_KEY in .env")
+
     img_dir = blog_path.parent / f"{blog_path.stem}_images"
     img_dir.mkdir(parents=True, exist_ok=True)
 
-    replacements = {}  # marker string → replacement markdown
+    replacements: list[tuple[str, str]] = []  # ordered (marker_full, replacement)
     manifest_entries = []
+    photo_cache: dict[str, dict] = {}  # desc_clean → photo dict (skip duplicate API calls)
 
     with progress_bar() as progress:
         task = progress.add_task("Fetching images", total=len(markers))
@@ -218,15 +322,23 @@ def main():
 
             progress.update(task, description=f"Searching: {query[:40]}")
 
-            photo = search_pexels(query, api_key)
+            if desc_clean in photo_cache:
+                photo = photo_cache[desc_clean]
+                console.print(f"  [info]Reusing cached photo for: {query[:40]}[/info]")
+            else:
+                photo = find_photo(query, pexels_key, pixabay_key, unsplash_key)
+                if photo:
+                    photo_cache[desc_clean] = photo
+
             if not photo:
                 console.print(f"  [warn]No photo found for: {query}[/warn]")
                 manifest_entries.append({"n": i, "filename": "(not downloaded)", "section": section, "desc": desc_clean, "caption": caption})
                 progress.advance(task)
                 continue
 
-            photographer = photo.get("photographer", "Pexels")
-            photo_url    = photo.get("url", "")
+            photographer = photo["photographer"]
+            photo_url    = photo["page_url"]
+            source       = photo["source"]
 
             progress.update(task, description=f"Downloading: {dest.name}")
             ok = download_image(photo, dest)
@@ -235,20 +347,20 @@ def main():
                 rel_path = dest.relative_to(REPO)
                 replacement = (
                     f"![{caption}](/{rel_path})\n"
-                    f"*{caption} — Photo by [{photographer}]({photo_url}) on Pexels*"
+                    f"*{caption} — Photo by [{photographer}]({photo_url}) on {source}*"
                 )
-                replacements[marker_full] = replacement
+                replacements.append((marker_full, replacement))
                 manifest_entries.append({"n": i, "filename": dest.name, "section": section, "desc": desc_clean, "caption": caption})
-                console.print(f"  [success]✓[/success] {dest.name}  [{caption}]")
+                console.print(f"  [success]✓[/success] {dest.name}  [{caption}] ({source})")
             else:
                 console.print(f"  [error]✗[/error] Failed to download for: {query}")
                 manifest_entries.append({"n": i, "filename": "(download failed)", "section": section, "desc": desc_clean, "caption": caption})
 
             progress.advance(task)
 
-    # Apply replacements to content
+    # Apply replacements in order — each .replace(..., 1) consumes the next occurrence
     updated = content
-    for marker, replacement in replacements.items():
+    for marker, replacement in replacements:
         updated = updated.replace(marker, replacement, 1)
     blog_path.write_text(updated, encoding="utf-8")
 

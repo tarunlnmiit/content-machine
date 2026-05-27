@@ -17,15 +17,35 @@ import requests
 from _console import console, progress_bar
 
 SUBREDDITS = {
-    "data_science_tech": ["datascience", "MachineLearning", "learnprogramming"],
-    "life_self_dev":     ["selfimprovement", "productivity", "stoicism"],
-    "poetry_quotes":     ["Poetry", "quotes", "WritingPrompts"],
+    "data_science_tech": [
+        "datascience", "MachineLearning", "learnprogramming",
+        "programming", "Python", "learnmachinelearning",
+        "mlops", "analytics", "DataAnalysis", "dataengineering",
+    ],
+    "life_self_dev": [
+        "selfimprovement", "productivity", "stoicism",
+        "getmotivated", "DecidingToBeBetter",
+        "psychology", "AcademicPsychology",
+        "mentalhealth", "MentalHealthSupport",
+        "LifeProTips", "LifeAdvice",
+    ],
+    "poetry_quotes": [
+        "Poetry", "quotes", "WritingPrompts",
+        "Poem", "OCPoetry",
+    ],
 }
 
 KEYWORDS = {
-    "data_science_tech": ["data", "machine learning", "python", "ai", "analysis", "statistics", "model"],
-    "life_self_dev":     ["habit", "motivation", "goal", "discipline", "growth", "mindset", "success"],
-    "poetry_quotes":     ["poem", "poetry", "quote", "verse", "inspiration", "metaphor", "wisdom"],
+    "data_science_tech": [
+        "data", "machine learning", "python", "ai", "analysis", "statistics", "model",
+        "mlops", "pipeline", "deployment", "analytics", "sql", "etl", "warehouse",
+    ],
+    "life_self_dev": [
+        "habit", "motivation", "goal", "discipline", "growth", "mindset", "success",
+        "psychology", "mental health", "anxiety", "burnout", "therapy",
+        "life lesson", "advice", "wisdom", "emotional",
+    ],
+    "poetry_quotes": ["poem", "poetry", "quote", "verse", "inspiration", "metaphor", "wisdom"],
 }
 
 

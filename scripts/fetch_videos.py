@@ -69,19 +69,10 @@ Blog content:
 {content[:2000]}"""
 
     try:
-        result = subprocess.run(
-            ["claude", "--model", "haiku"],
-            input=prompt,
-            capture_output=True,
-            text=True,
-            timeout=30
-        )
-
-        if result.returncode != 0:
-            print(f"Claude call failed: {result.stderr}")
-            return NICHE_KEYWORDS.get(niche, [])
-
-        response_text = result.stdout.strip()
+        import sys as _sys
+        _sys.path.insert(0, str(Path(__file__).parent))
+        from lib.claude_cli import call_claude
+        response_text = call_claude(prompt, cache=True, timeout=30).strip()
 
         json_match = re.search(r'\[.*\]', response_text, re.DOTALL)
         if json_match:
@@ -183,11 +174,33 @@ def main():
     parser.add_argument("--input", help="Blog markdown file")
     parser.add_argument("--script", help="YouTube script file (uses [BROLL:] cues instead of blog)")
     parser.add_argument("--niche", required=True, choices=["ds", "life", "poetry"])
+    parser.add_argument("--source", default="stock", choices=["stock", "ai"],
+                        help="stock = Pexels/Pixabay (default), ai = muapi.ai generative video")
+    parser.add_argument("--model", default="seedance-lite-t2v",
+                        choices=["seedance-lite-t2v", "seedance-pro-t2v", "kling-v2.1-master-t2v"],
+                        help="muapi.ai model (only used with --source ai)")
     parser.add_argument("--dry-run", action="store_true", help="Show what would download, don't download")
     args = parser.parse_args()
 
     if not args.input and not args.script:
         print("Error: provide either --input (blog) or --script (YouTube script)")
+        return
+
+    # Delegate to AI generator when --source ai
+    if args.source == "ai":
+        if not args.script:
+            print("Error: --source ai requires --script (needs [BROLL:] cues)")
+            return
+        import subprocess
+        cmd = [
+            "python3", str(Path(__file__).parent / "generate_video_ai.py"),
+            "--script", args.script,
+            "--niche", args.niche,
+            "--model", args.model,
+        ]
+        if args.dry_run:
+            cmd.append("--dry-run")
+        subprocess.run(cmd, check=True)
         return
 
     if args.script:
