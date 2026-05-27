@@ -6,10 +6,10 @@ I spent three years with a productivity app open every single day. I tracked my 
 
 When I stopped thinking of habits as individual achievements and saw them as moving parts in a larger machine, something shifted. A habit, alone, is a behavior. But a *system* of habits, connected and feeding back into each other? That becomes an engine. And that's when the momentum became real.
 
-[PERSONAL_INSERT: I realized this when my content output looked “consistent” on paper but my bigger creative goals were still stalled. I was writing blogs. Posting videos. Reading constantly. Experimenting with AI tools. I even had streaks for learning and creation. But the fiction book stayed unfinished. The poetry collection stayed fragmented. The deeper work — the work I actually cared about — kept getting delayed because none of the habits were connected to each other.
+I realized this when my content output looked “consistent” on paper but my bigger creative goals were still stalled. I was writing blogs. Posting videos. Reading constantly. Experimenting with AI tools. I even had streaks for learning and creation. But the fiction book stayed unfinished. The poetry collection stayed fragmented. The deeper work — the work I actually cared about — kept getting delayed because none of the habits were connected to each other.
 I had built activity, not momentum.
 The turning point came when I stopped measuring whether I’d “done the habit” and started asking whether the habits were feeding the same direction. Once writing, reflection, learning, and content creation became parts of the same loop instead of isolated checkboxes, progress stopped feeling random.
-]
+
 
 ## CONTEXT
 
@@ -27,9 +27,9 @@ The difference is feedback. When habits exist in isolation, you feel their effec
 
 This is compounding, but not in the way people usually talk about it. It's not "small improvements add up over time." It's more literal: the pieces talk to each other. Meditation → clarity → better work → motivation for next meditation → clearer work. That's a loop, not a line.
 
-[PERSONAL_INSERT: I noticed this most clearly with writing. On days when I exercised, stayed off algorithmic noise in the morning, and spent even ten minutes journaling before work, my writing sessions changed completely. I didn’t need to “force” creativity anymore. The words came cleaner. The thinking was sharper. Even my technical tutorials became easier to explain because my mind wasn’t fragmented.
+I noticed this most clearly with writing. On days when I exercised, stayed off algorithmic noise in the morning, and spent even ten minutes journaling before work, my writing sessions changed completely. I didn’t need to “force” creativity anymore. The words came cleaner. The thinking was sharper. Even my technical tutorials became easier to explain because my mind wasn’t fragmented.
 That’s when I understood the habits weren’t helping independently — they were amplifying each other.
-]
+
 
 The engine runs because you can *feel* the connection. That feeling isn't motivation in the traditional sense. It's not pushing yourself harder. It's recognizing the parts fit together. That recognition shifts the system from feeling like work to feeling inevitable.
 
@@ -56,10 +56,10 @@ The opposite is true. A *well-built* engine requires less discipline, not more. 
 
 The brutal part is the setup phase. Building the engine requires thinking. It requires sitting with discomfort to figure out which pieces matter to *you* — not what the internet says should matter. Most people skip this and jump straight to execution, then wonder why they can't sustain it.
 
-[PERSONAL_INSERT: For a while, I tried copying systems from hyper-optimized productivity creators online — rigid schedules, over-engineered trackers, impossible daily targets. On paper, it looked efficient. In practice, it quietly killed my ability to think deeply or create consistently.
+For a while, I tried copying systems from hyper-optimized productivity creators online — rigid schedules, over-engineered trackers, impossible daily targets. On paper, it looked efficient. In practice, it quietly killed my ability to think deeply or create consistently.
 I remember realizing this after a week where I completed almost every planned task but felt completely disconnected from my actual goals. I was maintaining the machine perfectly, but the machine was pointed in the wrong direction.
 Rebuilding meant accepting that my system needed to support both sides of me: the analytical side that loves structure and the creative side that needs room to wander. Once I stopped treating those as enemies, the engine finally started working.
-]
+
 
 Engines break. They need maintenance. A system that runs six months without review becomes a ritual — you're doing the habits but forgot why. The reflection loop isn't punishment. It's the maintenance schedule. Without it, the engine seizes up.
 

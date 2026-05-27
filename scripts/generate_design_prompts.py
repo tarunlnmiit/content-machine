@@ -181,7 +181,7 @@ def main():
         sys.exit(f"File not found: {blog_path}")
 
     blog_text = blog_path.read_text(encoding="utf-8")
-    slug = slugify(blog_path.stem)
+    slug = blog_path.stem
     niche = args.niche or detect_niche(blog_path)
 
     system_prompt = (REPO / "prompts" / "claude_design_agent.md").read_text(encoding="utf-8")

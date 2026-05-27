@@ -103,7 +103,7 @@ def main():
     title = extract_title(content)
     excerpt = " ".join(content.split()[:300])
 
-    slug = slugify(blog_path.stem)
+    slug = blog_path.stem
     niche = detect_niche(slug, str(blog_path))
     niche_accent = NICHE_ACCENT.get(niche, "#7C9CB0")
 
@@ -121,37 +121,39 @@ def main():
     tokens_used = {"input": 0, "output": 0}
 
     # Backend 1: NVIDIA NIM
-    try:
-        from nim_client import call_nim, NIM_MODEL_SMALL
-        print("Calling NVIDIA NIM ...", end=" ", flush=True)
-        text, usage = call_nim(prompt, model=NIM_MODEL_SMALL, max_tokens=512)
-        raw = text.strip()
-        tokens_used = {"input": usage["input_tokens"], "output": usage["output_tokens"]}
-        print("OK")
-    except Exception as e:
-        print(f"FAILED ({e})")
-
-    # Backend 2: Ollama
-    if raw is None:
+    if False:  # disabled: Claude Max subscription
         try:
-            import requests as _req
-            print("Falling back to Ollama ...", end=" ", flush=True)
-            resp = _req.post(
-                "http://localhost:11434/api/generate",
-                json={"model": "gemma4:e2b", "prompt": prompt, "stream": False},
-                timeout=60,
-            )
-            if resp.status_code != 200:
-                raise RuntimeError(f"Ollama HTTP {resp.status_code}")
-            raw = resp.json().get("response", "").strip()
+            from nim_client import call_nim, NIM_MODEL_SMALL
+            print("Calling NVIDIA NIM ...", end=" ", flush=True)
+            text, usage = call_nim(prompt, model=NIM_MODEL_SMALL, max_tokens=512)
+            raw = text.strip()
+            tokens_used = {"input": usage["input_tokens"], "output": usage["output_tokens"]}
             print("OK")
         except Exception as e:
             print(f"FAILED ({e})")
 
-    # Backend 3: claude -p
+    # Backend 2: Ollama
+    if False:  # disabled: Claude Max subscription
+        if raw is None:
+            try:
+                import requests as _req
+                print("Falling back to Ollama ...", end=" ", flush=True)
+                resp = _req.post(
+                    "http://localhost:11434/api/generate",
+                    json={"model": "gemma4:e2b", "prompt": prompt, "stream": False},
+                    timeout=60,
+                )
+                if resp.status_code != 200:
+                    raise RuntimeError(f"Ollama HTTP {resp.status_code}")
+                raw = resp.json().get("response", "").strip()
+                print("OK")
+            except Exception as e:
+                print(f"FAILED ({e})")
+
+    # Backend 3: claude -p (primary: Claude Max subscription)
     if raw is None:
         try:
-            print("Falling back to claude -p ...", end=" ", flush=True)
+            print("Calling claude -p ...", end=" ", flush=True)
             result = subprocess.run(
                 ["claude", "-p", prompt],
                 capture_output=True, text=True, timeout=120,

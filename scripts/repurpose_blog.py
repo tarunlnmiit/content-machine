@@ -359,7 +359,7 @@ def main():
         sys.exit(f"File not found: {blog_path}")
 
     blog_text = blog_path.read_text(encoding="utf-8")
-    slug = slugify(blog_path.stem)
+    slug = blog_path.stem
 
     console.rule("[info]Repurposing Agent[/info]")
     source_type = "Source article" if args.source else "Blog"

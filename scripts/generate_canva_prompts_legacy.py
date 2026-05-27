@@ -311,7 +311,7 @@ def collect_blogs(slug_filter: str | None = None) -> list[dict]:
     for blog_file in sorted(blogs_dir.glob("*.md")):
         if blog_file.name.startswith("_"):
             continue
-        if slug_filter and slug_filter not in blog_file.name:
+        if slug_filter and slug_filter.replace("_", "-") not in blog_file.name.replace("_", "-"):
             continue
 
         slug = extract_slug(blog_file.name)

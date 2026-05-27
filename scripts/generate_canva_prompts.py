@@ -164,7 +164,7 @@ def collect_briefs(slug_filter: str | None = None) -> list[dict]:
     for d in dirs:
         if not d.is_dir():
             continue
-        if slug_filter and slug_filter not in d.name:
+        if slug_filter and slug_filter.replace("_", "-") not in d.name.replace("_", "-"):
             continue
         brief_path = d / "thumbnail_brief.json"
         if not brief_path.exists():

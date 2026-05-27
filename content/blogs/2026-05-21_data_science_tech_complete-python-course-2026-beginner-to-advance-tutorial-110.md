@@ -50,7 +50,7 @@ That `source env/bin/activate` line? That's the most important line in your Pyth
 
 Install one thing: `pip install jupyter notebook`. Jupyter is where you'll learn Python for data science. It's not where you'll *build* things, but it's where curiosity lives.
 
-[PERSONAL_INSERT: I learned this lesson the hard way while building AI and data projects across different environments — local machines, Docker containers, cloud notebooks, even managed runtimes like Databricks. One project worked perfectly on my laptop and completely failed inside a container because the Python version and dependency tree didn't match. Another time, a subtitle-generation workflow broke because a library update silently changed behavior between environments. I didn't lose time because Python was hard. I lost time because the setup was sloppy. That's when I stopped treating environments like optional cleanup work and started treating them like part of the actual engineering.]
+I learned this lesson the hard way while building AI and data projects across different environments — local machines, Docker containers, cloud notebooks, even managed runtimes like Databricks. One project worked perfectly on my laptop and completely failed inside a container because the Python version and dependency tree didn't match. Another time, a subtitle-generation workflow broke because a library update silently changed behavior between environments. I didn't lose time because Python was hard. I lost time because the setup was sloppy. That's when I stopped treating environments like optional cleanup work and started treating them like part of the actual engineering.
 
 The takeaway: spend 15 minutes on this. It's boring. It's also the only part of this course that *has* to be done exactly right.
 
@@ -76,7 +76,7 @@ When you sit down to solve a problem, ask: What's the smallest piece I can solve
 
 The code follows. The thinking comes first.
 
-[PERSONAL_INSERT: One of the biggest shifts in my own work happened when I stopped asking "What code should I write?" and started asking "What are the actual pieces of this problem?" I remember building workflows around long-form content repurposing — turning videos into subtitles, clips, structured posts, and metadata. At first it felt overwhelming because I saw it as one giant system. But once I decomposed it into stages — extract audio, generate transcript, clean text, identify highlights, render captions, export formats — the implementation became straightforward. Most programming becomes easier the moment the problem stops feeling like one giant blob.]
+One of the biggest shifts in my own work happened when I stopped asking "What code should I write?" and started asking "What are the actual pieces of this problem?" I remember building workflows around long-form content repurposing — turning videos into subtitles, clips, structured posts, and metadata. At first it felt overwhelming because I saw it as one giant system. But once I decomposed it into stages — extract audio, generate transcript, clean text, identify highlights, render captions, export formats — the implementation became straightforward. Most programming becomes easier the moment the problem stops feeling like one giant blob.
 
 ## SECTION 3 — Your First Script: Hello Data, Not Hello World
 
@@ -131,7 +131,7 @@ Third — you're saving your output in a reproducible format (JSON). This matter
 
 This is a real program. Not "Hello World." A working piece of thinking.
 
-[PERSONAL_INSERT: This tiny script already contains the structure behind real-world data systems. Input data comes in, transformation logic runs, outputs get stored somewhere reproducible. The scale changes later — maybe the data lives in a warehouse, maybe Spark processes millions of rows, maybe an API triggers the pipeline automatically — but the mental structure stays surprisingly similar. That's why learning small scripts properly matters more than jumping into "advanced AI" tutorials too early. The foundations scale farther than people think.]
+This tiny script already contains the structure behind real-world data systems. Input data comes in, transformation logic runs, outputs get stored somewhere reproducible. The scale changes later — maybe the data lives in a warehouse, maybe Spark processes millions of rows, maybe an API triggers the pipeline automatically — but the mental structure stays surprisingly similar. That's why learning small scripts properly matters more than jumping into "advanced AI" tutorials too early. The foundations scale farther than people think.
 
 ## SECTION 4 — The One Skill That Matters: Reading Error Messages
 
