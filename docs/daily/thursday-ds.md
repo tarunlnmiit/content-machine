@@ -149,6 +149,14 @@ python3 scripts/clip_shorts.py --slug {ds_slug} --count 4 --smart-crop --no-clau
 
 Output: `assets/video/edited/shorts/{ds_slug}_short_00.mp4`, `_short_01.mp4`, …
 
+### Augment the clips with HyperFrames (optional)
+
+Add Claude-powered overlays (code callouts, stat cards) on top of the cut clips:
+```bash
+python3 scripts/hyperframes_render.py --shorts --slug {ds_slug}
+```
+`--shorts` processes every `assets/video/edited/shorts/{ds_slug}_short_*.mp4` → augmented MP4s in `assets/hyperframes/`. Portrait clips are auto re-encoded (stream-copy corrupts portrait framing under parallel load). Upload the augmented version if it beats the plain crop.
+
 ---
 
 ## Step 7 — Update Notion status

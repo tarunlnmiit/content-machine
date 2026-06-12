@@ -188,13 +188,16 @@ cd /tmp/hf_*/
 npm run render
 ```
 
-### Shorts overlay
+### Shorts overlay (augment the clips cut by `clip_shorts.py`)
+
+Run AFTER `clip_shorts.py` (see the per-niche thursday guides). `--shorts` globs every clip in `assets/video/edited/shorts/{slug}_short_*.mp4` and overlays each:
 
 ```bash
 python3 scripts/hyperframes_render.py \
   --shorts \
-  --slug {full_slug}
-# full_slug = YYYY-MM-DD_data_science_tech_{slug}
+  --slug {slug}
+# {slug} must match the clip_shorts prefix, e.g. {ds_slug} / {life_slug} / {poetry_slug}
+# Output: augmented MP4s in assets/hyperframes/. Portrait clips auto re-encode.
 ```
 
 ### Use augmented version

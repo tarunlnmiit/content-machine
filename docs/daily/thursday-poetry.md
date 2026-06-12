@@ -142,6 +142,14 @@ python3 scripts/clip_shorts.py --slug {poetry_slug} --count 3 --no-claude
 
 Output: `assets/video/edited/shorts/{poetry_slug}_short_00.mp4`, `_short_01.mp4`, …
 
+### Augment the clips with HyperFrames (rarely needed for poetry)
+
+Poetry usually reads cleaner without overlays — skip by default. If a clip needs a quote card or stat:
+```bash
+python3 scripts/hyperframes_render.py --shorts --slug {poetry_slug}
+```
+`--shorts` processes every `assets/video/edited/shorts/{poetry_slug}_short_*.mp4` → augmented MP4s in `assets/hyperframes/`. Portrait clips are auto re-encoded (stream-copy corrupts portrait framing under parallel load).
+
 ---
 
 ## Step 7 — Update Notion status
