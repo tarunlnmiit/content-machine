@@ -87,12 +87,20 @@ Poetry script structure:
 [PAUSE: intentional silence beat]
 ```
 
+### Worksheet CTA (DS/Life, auto)
+
+For **DS and Life** YT scripts, `ghostwrite.py --format yt` appends a spoken `[WORKSHEET CTA]` line ("free worksheet, linked in the description") — **only if a worksheet already exists** for that blog's slug (run the worksheet step first, or it skips silently). It also prints a **YouTube description** block to paste into the video description at upload. Poetry has no worksheet, so nothing is added. Re-print the description block anytime:
+```bash
+python3 scripts/worksheet_links.py --week {week}
+```
+
 ### Verify scripts
 
 Each script should be:
 - 500–1,500 words (8–12 min at 120 wpm)
 - Personal voice, no jargon without explanation
 - `[SCREEN:]` / `[BROLL:]` / `[CODE_INSERT:]` cues throughout
+- For DS/Life: a `[WORKSHEET CTA]` line near the end (if a worksheet exists)
 - No banned words
 
 ```bash
