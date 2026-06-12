@@ -98,9 +98,10 @@ Rules for EACH short:
 CREATIVE DIRECTION — you are the motion graphics director, not a caption writer:
 - WordReveal is a LAST RESORT. Use it for at most 1 in 5 scenes (≤20% of total).
   Before placing a WordReveal, ask: can CounterReveal, DataVizReveal, AtmosphericQuote,
-  NumberedTips, LineReveal, or ImageTextReveal carry this moment with more visual impact?
+  NumberedTips, LineReveal, ImageTextReveal, or HandwrittenReveal carry this moment with more visual impact?
 - CounterReveal: whenever the speaker mentions a specific number, stat, percentage, or metric.
 - ImageTextReveal: narrative peaks, emotional beats, cinematic atmosphere — bold headline on image.
+- HandwrittenReveal: poetry verses, intimate emotional lines, lyrical moments — life and poetry niche only.
 - AtmosphericQuote: thesis lines, memorable one-liners, poem openings — never WordReveal for these.
 - Every scene should SHOW and VISUALIZE — data, structure, emotion, contrast — not just caption words.
 
@@ -160,9 +161,10 @@ MIX REQUIREMENT — the final set MUST include both fullscreen and panel scenes:
 CREATIVE DIRECTION — you are the motion graphics director, not a caption writer:
 - WordReveal is a LAST RESORT. Use it for at most 1 in 5 scenes (≤20% of total).
   Before placing a WordReveal, ask: can CounterReveal, DataVizReveal, AtmosphericQuote,
-  NumberedTips, LineReveal, or ImageTextReveal carry this moment with more visual impact?
+  NumberedTips, LineReveal, ImageTextReveal, or HandwrittenReveal carry this moment with more visual impact?
 - CounterReveal: whenever the speaker cites a specific number, stat, percentage, or metric — animate it counting up.
 - ImageTextReveal: narrative peaks, emotional beats, cinematic atmosphere — bold headline anchored on an image.
+- HandwrittenReveal: poetry verses, intimate emotional lines, lyrical moments — life and poetry niche only.
 - AtmosphericQuote: thesis lines, memorable one-liners, poem openings — prefer over WordReveal for these.
 - Every scene should SHOW and VISUALIZE — data, structure, emotion, contrast — not just caption words.
 
@@ -173,7 +175,7 @@ Rules:
 - niche: use "{niche}" exactly.
 - USE ALL AVAILABLE COMPONENTS — do not default to the same 3–4 components. Actively look for
   moments that suit HabitLoop, LineReveal, AtmosphericQuote, DataVizReveal, TransformationArc,
-  CounterReveal, ImageTextReveal, and ToolComparison, not just WordReveal and NumberedTips.
+  CounterReveal, ImageTextReveal, HandwrittenReveal, and ToolComparison, not just WordReveal and NumberedTips.
   Every component in the catalog should appear at least once if the script gives an opportunity.
 
 Each object in the array MUST have exactly these fields:
@@ -226,7 +228,7 @@ VALID_LAYOUTS = {"fullscreen", "panel-left", "panel-right", "panel-top"}
 
 # These components hardcode widths that break at 1/3 screen (~640px).
 # Automatically coerced to "fullscreen" if the model assigns a panel layout.
-FULLSCREEN_ONLY_COMPONENTS = {"DataVizReveal", "CodeAnnotation", "ToolComparison", "ConceptExplainer", "CounterReveal"}
+FULLSCREEN_ONLY_COMPONENTS = {"DataVizReveal", "CodeAnnotation", "ToolComparison", "ConceptExplainer", "CounterReveal", "HandwrittenReveal", "ImageTextReveal"}
 
 
 def validate_scene(scene: dict, index: int) -> None:

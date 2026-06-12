@@ -13,6 +13,7 @@ import { AtmosphericQuote } from "./scenes/AtmosphericQuote";
 import { LineReveal } from "./scenes/LineReveal";
 import { CounterReveal } from "./scenes/CounterReveal";
 import { ImageTextReveal } from "./scenes/ImageTextReveal";
+import { HandwrittenReveal } from "./scenes/HandwrittenReveal";
 
 const CROSSFADE_FRAMES = 12;
 
@@ -103,7 +104,8 @@ export function SceneRenderer({ plan, niche }: { plan: ScenePlan; niche: Niche }
     case "AtmosphericQuote":  return <AtmosphericQuote  {...p} />;
     case "LineReveal":        return <LineReveal        {...p} />;
     case "CounterReveal":     return <CounterReveal     {...p} />;
-    case "ImageTextReveal":   return <ImageTextReveal   {...p} />;
+    case "ImageTextReveal":    return <ImageTextReveal    {...p} />;
+    case "HandwrittenReveal":  return <HandwrittenReveal  {...p} />;
     default:                  return <PlaceholderScene plan={plan} niche={niche} />;
   }
 }
