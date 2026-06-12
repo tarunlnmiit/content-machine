@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "node scripts/build-worksheets-manifest.mjs",
-  "outputDirectory": ".",
+  "outputDirectory": "public",
   "functions": {
     "api/worksheet.mjs": {
       "includeFiles": "output/worksheets/**"
