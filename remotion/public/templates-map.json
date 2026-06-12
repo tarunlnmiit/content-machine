@@ -220,12 +220,16 @@
     {
       "name": "Prompt to Motion Graphics",
       "remotion_template": "template-prompt-to-motion-graphics",
-      "package": "@remotion/skia @shopify/react-native-skia",
-      "status": "planned",
+      "package": "remotion next openai",
+      "status": "documented",
       "components": [],
-      "use_when": ["AI prompt → complex motion graphics — advanced CustomScene pipeline"],
+      "use_when": [
+        "complex generative visuals (particle systems, data flows, procedural animation) that are hard to describe as component props",
+        "alternative to generate_custom_scene.py when visual preview during generation is needed",
+        "filling CUSTOM_SCENE_SLOT entries in scene plans with richer visuals"
+      ],
       "niche_affinity": ["ds", "life", "poetry"],
-      "props_hint": "infrastructure — requires CustomScene pipeline (generate_custom_scene.py)"
+      "props_hint": "standalone app — setup: cd prompt-to-motion-graphics && npx create-video@latest . (choose Prompt to Motion Graphics) — see prompt-to-motion-graphics/SETUP.md"
     },
     {
       "name": "Recorder",

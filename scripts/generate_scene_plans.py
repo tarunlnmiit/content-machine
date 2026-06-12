@@ -105,6 +105,11 @@ CREATIVE DIRECTION — you are the motion graphics director, not a caption write
 - AtmosphericQuote: thesis lines, memorable one-liners, poem openings — never WordReveal for these.
 - Every scene should SHOW and VISUALIZE — data, structure, emotion, contrast — not just caption words.
 
+REQUIRED COMPONENT RULES (hard constraints — violating these is an error):
+- If ANY number, stat, percentage, count, or metric appears in the script → at least ONE scene MUST use CounterReveal.
+- If niche is life or poetry → at least ONE scene MUST use ImageTextReveal (pick the most cinematic/emotional moment).
+- If niche is poetry → at least ONE scene MUST use HandwrittenReveal (pick a verse or lyrical line).
+
 Return a JSON array of {shorts} short objects. Each short object MUST have exactly these fields:
 {{
   "shortId": "s01",
@@ -167,6 +172,11 @@ CREATIVE DIRECTION — you are the motion graphics director, not a caption write
 - HandwrittenReveal: poetry verses, intimate emotional lines, lyrical moments — life and poetry niche only.
 - AtmosphericQuote: thesis lines, memorable one-liners, poem openings — prefer over WordReveal for these.
 - Every scene should SHOW and VISUALIZE — data, structure, emotion, contrast — not just caption words.
+
+REQUIRED COMPONENT RULES (hard constraints — violating these is an error):
+- If ANY number, stat, percentage, count, or metric appears in the script → at least ONE scene MUST use CounterReveal.
+- If niche is life or poetry → at least ONE scene MUST use ImageTextReveal (pick the most cinematic/emotional moment).
+- If niche is poetry → at least ONE scene MUST use HandwrittenReveal (pick a verse or lyrical line).
 
 Rules:
 - Each scene must use exactly one component from the catalog.
