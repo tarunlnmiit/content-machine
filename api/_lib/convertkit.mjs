@@ -34,9 +34,14 @@ export async function subscriberExists(email) {
   return Array.isArray(data?.subscribers) && data.subscribers.length > 0;
 }
 
-// POST /subscribers is an upsert — call subscriberExists() first to classify.
+// POST /subscribers is an upsert (body { email_address }). Returns
+// { subscriber: { id, ... } }. Call subscriberExists() first to classify.
 export async function upsertSubscriber(email) {
-  return kit(`/subscribers`, { method: "POST", body: { email_address: email } });
+  const data = await kit(`/subscribers`, {
+    method: "POST",
+    body: { email_address: email },
+  });
+  return data?.subscriber ?? null;
 }
 
 export async function resolveTagId(name) {
@@ -50,20 +55,23 @@ export async function resolveTagId(name) {
   return tagIdCache.get(name);
 }
 
-// POST /subscribers/{email}/tags — tag by email, no subscriber id needed.
-export async function tagSubscriber(email, tagId) {
-  return kit(`/subscribers/${encodeURIComponent(email)}/tags`, {
+// POST /v4/tags/{tag_id}/subscribers/{subscriber_id} — empty body. Tag by
+// numeric subscriber id (the email-in-path form does not exist in v4).
+export async function tagSubscriber(subscriberId, tagId) {
+  return kit(`/tags/${tagId}/subscribers/${subscriberId}`, {
     method: "POST",
-    body: { tag_id: tagId },
+    body: {},
   });
 }
 
 // Full flow: classify, upsert, tag. Returns "first_time" | "returning".
 export async function captureAndTag(email) {
   const exists = await subscriberExists(email);
-  await upsertSubscriber(email); // upsert is safe whether new or returning
+  const subscriber = await upsertSubscriber(email); // safe whether new or returning
+  if (!subscriber?.id) throw new Error("Kit upsert returned no subscriber id");
+
   const tagName = exists ? "worksheet_repeat_visitor" : "first_time_worksheet";
   const tagId = await resolveTagId(tagName);
-  if (tagId) await tagSubscriber(email, tagId);
+  if (tagId) await tagSubscriber(subscriber.id, tagId);
   return exists ? "returning" : "first_time";
 }

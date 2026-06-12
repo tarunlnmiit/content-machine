@@ -71,7 +71,7 @@ Outputs:
 No per-blog ConvertKit landing page anymore. Drop the PDF in `output/worksheets/{week}/` (the generator already names it `{date}_{niche}_{slug}[_worksheet].pdf`), commit, push. Vercel redeploys, regenerates the manifest, and the link goes live:
 
 ```
-https://worksheets-mistakenlyhuman.vercel.app/get-worksheet?slug=<slug>
+https://worksheets-thebreathnetwork.vercel.app/get-worksheet?slug=<slug>
 ```
 
 The `<slug>` is the human part of the filename (date + niche prefix stripped, `_worksheet` suffix dropped). No config edit, no landing page, no upload.

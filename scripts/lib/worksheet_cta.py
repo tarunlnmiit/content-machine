@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import os
 
-DEFAULT_BASE_URL = "https://worksheets-mistakenlyhuman.vercel.app"
+DEFAULT_BASE_URL = "https://worksheets-thebreathnetwork.vercel.app"
 
 # Marker so auto-insertion is idempotent (guard against double-insert).
 CTA_MARKER = "<!-- worksheet-cta -->"
