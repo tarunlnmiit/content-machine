@@ -306,6 +306,32 @@ Flags:
 
 After generation, add the component to `remotion/public/templates-map.json` `scene_components` if you want `generate_scene_plans.py` to use it in future scene plans.
 
+### Recorder (Life + Poetry Talking Head)
+
+Remotion Recorder is a standalone Next.js app for webcam recording with Whisper transcription.
+Used for Life and Poetry niche videos. **First-time setup** (run once):
+
+```bash
+cd recorder
+npx create-video@latest .   # Choose: Recorder
+npm install
+```
+
+Daily use:
+
+```bash
+cd recorder && npm run dev   # Opens at http://localhost:3000
+```
+
+After recording, move outputs to the pipeline:
+
+| Recorder output | Destination |
+|----------------|-------------|
+| Exported `.mp4` | `assets/raw/YYYY-MM-DD_<slug>_raw.mp4` |
+| Whisper captions `.json` | `remotion/public/captions/YYYY-Wnn/<slug>.captions.json` |
+
+Then the normal edit pipeline applies: `prepare_remotion_edit.py` → `render_week.py`. See `recorder/SETUP.md` for full details.
+
 ### Generate a Scene Plan
 
 ```bash

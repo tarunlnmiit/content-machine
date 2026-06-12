@@ -231,14 +231,14 @@
       "name": "Recorder",
       "remotion_template": "template-recorder",
       "package": "@remotion/recorder",
-      "status": "planned",
+      "status": "documented",
       "components": [],
       "use_when": [
-        "screen recording + talking head for Life / Poetry niche intros",
-        "capture browser demos with synchronized audio"
+        "talking-head recording for Life and Poetry niche videos",
+        "webcam capture with Whisper auto-transcription and caption export"
       ],
       "niche_affinity": ["life", "poetry"],
-      "props_hint": "infrastructure — requires npx create-video@latest --recorder setup"
+      "props_hint": "standalone app — setup: cd recorder && npx create-video@latest . (choose Recorder) — see recorder/SETUP.md"
     }
   ],
   "scene_components": [
