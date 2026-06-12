@@ -337,6 +337,14 @@
       "props": "headline: str, imageUrl?: str (local path or URL), subtext?: str (eyebrow label above headline)",
       "niche_affinity": ["life", "poetry"],
       "duration_hint": "5-7s"
+    },
+    {
+      "componentName": "CUSTOM_SCENE_SLOT",
+      "template_source": "generate_custom_scene.py",
+      "use_when": "no existing component fits — generate a one-off scene with: python3 scripts/generate_custom_scene.py --name MyComponent --prompt '<description>' --niche ds|life|poetry",
+      "props": "determined by generated component — review output file for interface",
+      "niche_affinity": ["ds", "life", "poetry"],
+      "duration_hint": "varies"
     }
   ]
 }
