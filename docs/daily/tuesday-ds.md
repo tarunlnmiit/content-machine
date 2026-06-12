@@ -1,10 +1,36 @@
 # Tuesday — DS Track (~1 hr)
 
-Blog exists from Monday. Today: generate YouTube script, scene plans, social images, slide deck, carousel, and worksheet.
+Blog exists from Monday. Today: worksheet **first**, then YouTube script, scene plans, social images, slide deck, carousel.
 
 ---
 
-## Step 1 — Generate DS YouTube script (~10 min)
+## Step 1 — Generate worksheet (~10 min) — do this FIRST
+
+Worksheet before the script so the script can auto-append a spoken "worksheet in the description" CTA (only fires if the worksheet is already in the manifest).
+
+```bash
+python3 scripts/generate_worksheet_outline.py \
+  -i content/blogs/{week}/{ds_slug}.md
+
+python3 scripts/generate_canva_worksheet_prompt.py \
+  -i content/worksheets/{ds_slug}_worksheet.json
+```
+
+Paste the printed Canva prompt into Canva AI → export PDF → save to:
+```
+output/worksheets/{week}/{ds_slug}_worksheet.pdf
+```
+
+Build the manifest so the slug is live and the script can see it:
+```bash
+node scripts/build-worksheets-manifest.mjs
+python3 scripts/worksheet_links.py --week {week} --niche data_science_tech
+```
+No ConvertKit landing page — committing the PDF makes the gated link live. The emitter prints the URL + a blog line + a YouTube description block. (See `documentation/WORKSHEET_WORKFLOW.md`.)
+
+---
+
+## Step 2 — Generate DS YouTube script (~10 min)
 
 Screen-recording style (code tutorial, 8–12 min).
 
@@ -24,7 +50,7 @@ python3 scripts/ghostwrite.py \
   --video-style stock
 ```
 
-Output: `content/scripts/{week}/{ds_slug}_yt.md`
+Output: `content/scripts/{week}/{ds_slug}_yt.md` — includes a spoken `[WORKSHEET CTA]` line (Step 1 worksheet exists) + `ghostwrite.py` prints the YouTube description block to paste at upload.
 
 DS script cues:
 ```
@@ -44,7 +70,7 @@ wc -w content/scripts/{week}/{ds_slug}_yt.md
 
 ---
 
-## Step 2 — Generate scene plan (~5 min)
+## Step 3 — Generate scene plan (~5 min)
 
 Motion short scene plans — 7 unique 30–60s shorts from one script, each a different angle (components auto-chosen by Claude Opus).
 
@@ -83,7 +109,7 @@ Writes: `content/derivatives/{week}/{ds_slug}/shorts_manifest.json` — one slot
 
 ---
 
-## Step 3 — Generate social images (~10 min)
+## Step 4 — Generate social images (~10 min)
 
 ```bash
 python3 scripts/generate_social_images.py --slug {ds_slug}
@@ -104,7 +130,7 @@ python3 scripts/update_schedule.py \
 
 ---
 
-## Step 4 — Generate slide deck (~5 min)
+## Step 5 — Generate slide deck (~5 min)
 
 ```bash
 python3 scripts/generate_slide_deck.py --slug {ds_slug}
@@ -117,7 +143,7 @@ Outputs in `assets/slides/{week}/`:
 
 ---
 
-## Step 5 — Generate Instagram carousel (~5 min)
+## Step 6 — Generate Instagram carousel (~5 min)
 
 ```bash
 python3 scripts/generate_carousel.py \
@@ -127,30 +153,6 @@ python3 scripts/generate_carousel.py \
 Outputs:
 - `assets/carousels/{week}/{ds_slug}_carousel.html`
 - `assets/carousels/{week}/{ds_slug}/slide_1.png` … `slide_7.png` (1080×1350)
-
----
-
-## Step 6 — Generate worksheet (~10 min)
-
-```bash
-python3 scripts/generate_worksheet_outline.py \
-  -i content/blogs/{week}/{ds_slug}.md
-
-python3 scripts/generate_canva_worksheet_prompt.py \
-  -i content/worksheets/{ds_slug}_worksheet.json
-```
-
-Paste the printed Canva prompt into Canva AI → export PDF → save to:
-```
-output/worksheets/{week}/{ds_slug}_worksheet.pdf
-```
-
-No ConvertKit landing page — commit the PDF and the gated link is live. Get it:
-```bash
-node scripts/build-worksheets-manifest.mjs
-python3 scripts/worksheet_links.py --week {week} --niche data_science_tech
-```
-Paste the `…/get-worksheet?slug=<slug>` link into socials. (See `documentation/WORKSHEET_WORKFLOW.md`.)
 
 ---
 

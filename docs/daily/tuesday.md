@@ -1,24 +1,61 @@
 # Tuesday — Video Scripts + Visuals + Scene Plans (~1 hr)
 
-Blogs exist from Monday. Today: generate YouTube scripts for all 3 niches, create all social visual assets, generate Remotion scene plans for motion shorts, and produce worksheets.
+Blogs exist from Monday. Today: produce worksheets **first** (so YouTube scripts can reference them in the description), generate YouTube scripts for all 3 niches, Remotion scene plans for motion shorts, and all social visual assets.
 
 ## Tuesday at a glance
 
 | Time | Task | Output |
 |------|------|--------|
-| 9:00 AM | Generate DS YT script | `content/scripts/{week}/{ds_slug}_yt.md` |
-| 9:15 AM | Generate Life YT script | `content/scripts/{week}/{life_slug}_yt.md` |
-| 9:30 AM | Generate Poetry YT script | `content/scripts/{week}/{poetry_slug}_yt.md` |
-| 9:45 AM | Generate Remotion scene plans (all 3) | `remotion/public/scene-plans/{week}/*.json` |
-| 10:00 AM | Generate social images (all 3) | `assets/social_posts/{week}/{slug}_*.png` |
-| 10:15 AM | Generate slide decks (all 3) | `assets/slides/{week}/{slug}_slides.pdf` |
-| 10:30 AM | Generate IG carousels (all 3) | `assets/carousels/{week}/{slug}/slide_1–7.png` |
-| 10:45 AM | Generate worksheets (DS + Life) | `output/worksheets/{week}/{slug}_worksheet.pdf` |
-| 11:00 AM | Verify all assets | `scripts/list_week_content.py {week}` |
+| 9:00 AM | Generate worksheets (DS + Life) + build manifest | `output/worksheets/{week}/{slug}_worksheet.pdf` |
+| 9:20 AM | Generate DS YT script | `content/scripts/{week}/{ds_slug}_yt.md` |
+| 9:35 AM | Generate Life YT script | `content/scripts/{week}/{life_slug}_yt.md` |
+| 9:50 AM | Generate Poetry YT script | `content/scripts/{week}/{poetry_slug}_yt.md` |
+| 10:05 AM | Generate Remotion scene plans (all 3) | `remotion/public/scene-plans/{week}/*.json` |
+| 10:20 AM | Generate social images (all 3) | `assets/social_posts/{week}/{slug}_*.png` |
+| 10:35 AM | Generate slide decks (all 3) | `assets/slides/{week}/{slug}_slides.pdf` |
+| 10:50 AM | Generate IG carousels (all 3) | `assets/carousels/{week}/{slug}/slide_1–7.png` |
+| 11:05 AM | Verify all assets | `scripts/list_week_content.py {week}` |
 
 ---
 
-## Step 1 — Generate YouTube scripts
+## Step 1 — Generate lead-magnet worksheets (DS + Life) — do this FIRST
+
+Worksheets come first so the YouTube scripts (Step 2) can auto-append a spoken "worksheet in the description" CTA — that only fires if the worksheet already exists in the manifest. Poetry auto-skips (reflection format). Low-engagement blogs skip too.
+
+### DS worksheet:
+```bash
+python3 scripts/generate_worksheet_outline.py \
+  -i content/blogs/{week}/{ds_slug}.md
+
+python3 scripts/generate_canva_worksheet_prompt.py \
+  -i content/worksheets/{ds_slug}_worksheet.json
+```
+
+### Life worksheet:
+```bash
+python3 scripts/generate_worksheet_outline.py \
+  -i content/blogs/{week}/{life_slug}.md
+
+python3 scripts/generate_canva_worksheet_prompt.py \
+  -i content/worksheets/{life_slug}_worksheet.json
+```
+
+The Canva prompt prints to console. Paste into Canva AI to generate the PDF. Export and save to:
+```
+output/worksheets/{week}/{slug}_worksheet.pdf
+```
+
+Then build the manifest so the slug is live and the scripts can see it:
+```bash
+node scripts/build-worksheets-manifest.mjs
+python3 scripts/worksheet_links.py --week {week}
+```
+
+No ConvertKit landing page — committing the PDF makes the email-gated link live on the Vercel app. `worksheet_links.py` prints the URL + a blog paste line + a YouTube description block per worksheet. See `documentation/WORKSHEET_WORKFLOW.md` for the delivery system + one-time Kit setup.
+
+---
+
+## Step 2 — Generate YouTube scripts
 
 ### DS (screen-recording style, ~10 min)
 
@@ -89,7 +126,7 @@ Poetry script structure:
 
 ### Worksheet CTA (DS/Life, auto)
 
-For **DS and Life** YT scripts, `ghostwrite.py --format yt` appends a spoken `[WORKSHEET CTA]` line ("free worksheet, linked in the description") — **only if a worksheet already exists** for that blog's slug (run the worksheet step first, or it skips silently). It also prints a **YouTube description** block to paste into the video description at upload. Poetry has no worksheet, so nothing is added. Re-print the description block anytime:
+Because Step 1 built the worksheet manifest, the **DS and Life** scripts now carry a spoken `[WORKSHEET CTA]` line ("free worksheet, linked in the description"), and `ghostwrite.py` printed a **YouTube description** block to paste at upload. Poetry has no worksheet, so nothing is added. Re-print the description block anytime:
 ```bash
 python3 scripts/worksheet_links.py --week {week}
 ```
@@ -111,7 +148,7 @@ wc -w content/scripts/{week}/{poetry_slug}_yt.md
 
 ---
 
-## Step 2 — Generate Remotion scene plans (~5–8 min)
+## Step 3 — Generate Remotion scene plans (~5–8 min)
 
 Scene plans drive motion graphic shorts (`DSMotionShort`, `LifeMotionShort`, `PoetryMotionShort`). Claude Opus 4.8 reads the full script semantically and decides WHERE motion graphics make the most sense — no `[ANIMATION:]` tags required.
 
@@ -252,7 +289,7 @@ Or mix motion + clip:
 
 ---
 
-## Step 3 — Generate social images (~10 min)
+## Step 4 — Generate social images (~10 min)
 
 ### Option A — Remotion animated PNGs (recommended, requires render server)
 
@@ -311,7 +348,7 @@ After generating, **upload images to Google Drive** (public link required for Me
 
 ---
 
-## Step 3a — Generate slide decks (~10 min)
+## Step 4a — Generate slide decks (~10 min)
 
 ```bash
 python3 scripts/generate_slide_deck.py --week {week}
@@ -333,7 +370,7 @@ Uses `content/derivatives/{week}/{slug}/slide_outline.json` + `claude_design_bri
 
 ---
 
-## Step 3b — Generate Instagram carousels (~10 min)
+## Step 4b — Generate Instagram carousels (~10 min)
 
 ```bash
 python3 scripts/generate_carousel.py \
@@ -354,43 +391,7 @@ Upload carousel PNGs to Google Drive and save URLs to `schedule.json` (same proc
 
 ---
 
-## Step 3c — Generate lead-magnet worksheets (DS + Life)
-
-Poetry auto-skips (reflection format, no worksheet). Low-engagement blogs skip too.
-
-### DS worksheet:
-```bash
-python3 scripts/generate_worksheet_outline.py \
-  -i content/blogs/{week}/{ds_slug}.md
-
-python3 scripts/generate_canva_worksheet_prompt.py \
-  -i content/worksheets/{ds_slug}_worksheet.json
-```
-
-### Life worksheet:
-```bash
-python3 scripts/generate_worksheet_outline.py \
-  -i content/blogs/{week}/{life_slug}.md
-
-python3 scripts/generate_canva_worksheet_prompt.py \
-  -i content/worksheets/{life_slug}_worksheet.json
-```
-
-The Canva prompt prints to console. Paste into Canva AI to generate the worksheet PDF. Export and save to:
-```
-output/worksheets/{week}/{slug}_worksheet.pdf
-```
-
-After Canva export, **no ConvertKit landing page is needed**. The PDF in `output/worksheets/{week}/` is the whole setup — commit it and the email-gated link goes live on the Vercel app. Get the shareable URL:
-```bash
-node scripts/build-worksheets-manifest.mjs
-python3 scripts/worksheet_links.py --week {week}
-```
-Paste the printed `…/get-worksheet?slug=<slug>` link into socials. New blogs from `produce_blog.py` already carry the CTA in-body. See `documentation/WORKSHEET_WORKFLOW.md` for the delivery system + one-time Kit setup.
-
----
-
-## Step 4 — Verify all assets (2 min)
+## Step 5 — Verify all assets (2 min)
 
 ```bash
 python3 scripts/list_week_content.py {week}
@@ -408,7 +409,8 @@ SHORTS MFST:    ds ✓   life ✓   poetry ✓
 ```
 
 Missing anything? Re-run the relevant step. Most common failures:
-- Script missing → `ghostwrite.py` failed silently — re-run Step 1
+- Script missing → `ghostwrite.py` failed silently — re-run Step 2
+- Worksheet PDF missing → do Step 1 (Canva export) before scripts, else the script CTA won't attach
 - Scene plan missing → re-run `generate_animation_prompts.py --scene-plans`
 - Carousel missing → re-run `generate_carousel.py` for that blog
 - Worksheet JSON missing → re-run `generate_worksheet_outline.py`

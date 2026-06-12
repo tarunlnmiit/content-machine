@@ -7,7 +7,7 @@ Last updated: 2026-06-10
 | Day | Task | Niches | Guide |
 |-----|------|--------|-------|
 | [Monday](monday.md) | Generate all blogs + repurpose → derivatives | DS + Life + Poetry | ~45 min |
-| [Tuesday](tuesday.md) | Video scripts + social visual assets + scene plans + worksheets | DS + Life + Poetry | ~45 min |
+| [Tuesday](tuesday.md) | Worksheets (first) + video scripts + scene plans + social visual assets | DS + Life + Poetry | ~45 min |
 | [Wednesday](wednesday.md) | Publish blogs (Substack + Medium) + shoot videos + generate captions + build edit plans | DS + Life + Poetry | ~3 hrs |
 | [Thursday](thursday.md) | Render (Remotion) + optional HyperFrames + upload + Notion sync + verify | DS + Life + Poetry | ~3 hrs |
 | [Friday](friday.md) | Schedule social (THIS week → posts NEXT week) + buffer check + refresh tracker | DS + Life + Poetry | ~45 min |
