@@ -86,7 +86,11 @@ python3 scripts/worksheet_links.py --week 2026-W21   # print links for a week
 python3 scripts/worksheet_links.py              # all worksheets
 ```
 
-Paste the printed URL into the blog (Medium/Substack), Instagram bio/stories, and other socials. For **new** blogs written via `produce_blog.py`, the CTA is auto-inserted into the markdown — no copy step needed.
+`worksheet_links.py` prints three ready-to-paste forms per worksheet: the raw **URL**, a **blog** markdown line (`📋 Free worksheet: [Download … →](url)`), and a **YouTube description** block.
+
+Auto-insertion (no copy step):
+- **Blogs** via `produce_blog.py` → CTA appended to the markdown.
+- **YouTube scripts** via `ghostwrite.py --format yt` (DS/Life) → a spoken "free worksheet, linked in the description" line is appended **only if a worksheet exists for that slug**, and the description snippet is printed for you to paste into the video description.
 
 ---
 

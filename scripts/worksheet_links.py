@@ -22,7 +22,12 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib.worksheet_cta import base_url, worksheet_url  # noqa: E402
+from lib.worksheet_cta import (  # noqa: E402
+    base_url,
+    worksheet_url,
+    worksheet_blog_snippet,
+    worksheet_yt_description_snippet,
+)
 
 REPO = Path(__file__).resolve().parent.parent
 MANIFEST = REPO / "worksheets-manifest.json"
@@ -80,10 +85,16 @@ def main() -> None:
 
     print(f"\nWorksheet links  (BASE_URL = {base_url()})\n")
     for r in rows:
-        print(f"  {r['date']} · {r['week']} · {r['niche']}")
-        print(f"  {r['title']}")
-        print(f"  {r['url']}\n")
-    print(f"{len(rows)} worksheet(s).\n")
+        print(f"{'─' * 72}")
+        print(f"{r['title']}  ·  {r['date']} · {r['week']} · {r['niche']}")
+        print(f"\nURL:\n  {r['url']}")
+        print("\nBlog (paste into Medium/Substack body):")
+        print(f"  {worksheet_blog_snippet(r['slug'], r['title'])}")
+        print("\nYouTube description (paste into the video description):")
+        for line in worksheet_yt_description_snippet(r["slug"], r["title"]).splitlines():
+            print(f"  {line}")
+        print()
+    print(f"{'─' * 72}\n{len(rows)} worksheet(s).\n")
 
 
 if __name__ == "__main__":
