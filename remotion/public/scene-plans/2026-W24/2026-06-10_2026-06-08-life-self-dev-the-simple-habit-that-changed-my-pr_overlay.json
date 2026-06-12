@@ -159,7 +159,7 @@
     }
   },
   {
-    "componentName": "CUSTOM_SCENE_SLOT",
+    "componentName": "BrowserTabOverload",
     "script": "my brain had become a browser with fifty tabs open",
     "niche": "life",
     "durationSec": 6,

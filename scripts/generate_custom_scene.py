@@ -33,7 +33,7 @@ SCENES_DIR = REPO / "remotion" / "src" / "compositions" / "scenes"
 RENDERER_PATH = REPO / "remotion" / "src" / "compositions" / "SceneRenderer.tsx"
 REMOTION_DIR = REPO / "remotion"
 
-MODEL = "claude-sonnet-4-6"
+MODEL = "claude-haiku-4-5-20251001"
 MAX_RETRIES = 3
 
 # ── Prompt templates ────────────────────────────────────────────────────────
@@ -209,6 +209,7 @@ def main() -> None:
     print(f"Calling Claude Sonnet ({MODEL}) to generate {name}.tsx...", file=sys.stderr)
 
     raw = call_claude(gen_prompt, cache=False, model=MODEL, stream=True,
+                      timeout=300,
                       progress_label=f"Generating {name}")
     code = extract_tsx(raw)
 
@@ -243,6 +244,7 @@ def main() -> None:
             errors="\n".join(errors),
         )
         raw = call_claude(fix_prompt, cache=False, model=MODEL, stream=True,
+                          timeout=300,
                           progress_label=f"Correcting {name} (attempt {attempt + 2})")
         code = extract_tsx(raw)
 

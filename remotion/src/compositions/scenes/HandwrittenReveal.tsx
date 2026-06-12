@@ -1,6 +1,4 @@
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { SkiaCanvas } from "@remotion/skia";
-import { Path } from "@shopify/react-native-skia";
 import { COLORS, FONTS, type Niche, nicheAccent, gridOverlay } from "../../styles/chronixel";
 
 export interface HandwrittenRevealProps extends Record<string, unknown> {
@@ -67,22 +65,24 @@ export function HandwrittenReveal({ lines, niche }: HandwrittenRevealProps) {
     <AbsoluteFill style={{ backgroundColor: COLORS.bg }}>
       <AbsoluteFill style={gridOverlay(niche)} />
 
-      {/* Skia canvas — underline stroke per line */}
-      <SkiaCanvas width={width} height={height}>
+      {/* SVG underlines with stroke animation */}
+      <svg style={{ position: "absolute", inset: 0, width, height, pointerEvents: "none" }}>
         {lineData.map(({ svgPath, strokeProgress }, i) => (
-          <Path
+          <path
             key={i}
-            path={svgPath}
-            start={0}
-            end={strokeProgress}
-            color={accent}
+            d={svgPath}
+            stroke={accent}
             strokeWidth={STROKE_WIDTH}
-            style="stroke"
-            strokeCap="round"
-            strokeJoin="round"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            style={{
+              strokeDasharray: 2000,
+              strokeDashoffset: interpolate(strokeProgress, [0, 1], [2000, 0]),
+            }}
           />
         ))}
-      </SkiaCanvas>
+      </svg>
 
       {/* Text overlay */}
       <AbsoluteFill

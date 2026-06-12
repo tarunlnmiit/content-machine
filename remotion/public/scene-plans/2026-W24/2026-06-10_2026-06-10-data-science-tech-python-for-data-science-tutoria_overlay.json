@@ -86,7 +86,7 @@
     }
   },
   {
-    "componentName": "CUSTOM_SCENE_SLOT",
+    "componentName": "DataPipelineFlow",
     "script": "loading and exploring, selecting and filtering, cleaning messy data, and aggregating",
     "niche": "ds",
     "durationSec": 7,
@@ -373,7 +373,7 @@
     "layout": "panel-left",
     "props": {
       "title": "The Four-Step Pass",
-      "phases": [
+      "steps": [
         {
           "label": "Explore"
         },

@@ -141,7 +141,7 @@
     }
   },
   {
-    "componentName": "CUSTOM_SCENE_SLOT",
+    "componentName": "VoiceMemoryDissolve",
     "script": "You miss how they said your name. The exact pitch of their laugh.",
     "niche": "poetry",
     "durationSec": 7,

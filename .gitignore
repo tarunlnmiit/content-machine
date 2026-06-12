@@ -89,3 +89,5 @@ w21.txt
 #   content/worksheets/    (PDFs, HTMLs, fonts, svgs)
 #   output/worksheets/     (PDFs)
 # ============================================
+.vercel
+.env*

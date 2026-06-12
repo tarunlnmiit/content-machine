@@ -138,11 +138,25 @@ def main():
     long_video = edited_dir / f"{args.slug}.mp4"
     meta_file = edited_dir / f"{args.slug}_edit_meta.json"
 
+    # Try date_slug format if plain slug doesn't exist
+    if not long_video.exists():
+        date_prefix = args.slug[:10]  # YYYY-MM-DD
+        date_slug_video = edited_dir / f"{date_prefix}_{args.slug}.mp4"
+        if date_slug_video.exists():
+            long_video = date_slug_video
+            meta_file = edited_dir / f"{date_prefix}_{args.slug}_edit_meta.json"
+
     # If slug ends with -aug (hyperframes), fall back to base (_yt) video
     if not long_video.exists() and args.slug.endswith("-aug"):
         base_slug = args.slug[:-4]  # strip "-aug"
         long_video = edited_dir / f"{base_slug}.mp4"
         meta_file = edited_dir / f"{base_slug}_edit_meta.json"
+        if not long_video.exists():
+            date_prefix = base_slug[:10]
+            date_slug_video = edited_dir / f"{date_prefix}_{base_slug}.mp4"
+            if date_slug_video.exists():
+                long_video = date_slug_video
+                meta_file = edited_dir / f"{date_prefix}_{base_slug}_edit_meta.json"
         if long_video.exists():
             print(f"  note: using base video (pre-hyperframes): {long_video.name}")
 

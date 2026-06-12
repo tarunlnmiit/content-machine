@@ -351,6 +351,30 @@
       "duration_hint": "5-8s"
     },
     {
+      "componentName": "VoiceMemoryDissolve",
+      "template_source": "custom",
+      "use_when": "a voice, person, or memory should dissolve — waveform pulses then bursts into particles that reform as name, color swatch, and silhouette before fading; use at emotional peaks in poetry or life niche",
+      "props": "niche: str, voiceName?: str (default 'Echo'), particleCount?: int (default 56)",
+      "niche_affinity": ["poetry", "life"],
+      "duration_hint": "12-14s"
+    },
+    {
+      "componentName": "DataPipelineFlow",
+      "template_source": "custom",
+      "use_when": "explaining a data transformation pipeline — rows animate through Load → Select → Clean → Aggregate stages with glow on entry and compression visual across stages",
+      "props": "niche: str",
+      "niche_affinity": ["ds"],
+      "duration_hint": "5-7s"
+    },
+    {
+      "componentName": "BrowserTabOverload",
+      "template_source": "custom",
+      "use_when": "depicting mental overload, context switching, or tab chaos — 50 browser tabs spawn with random thoughts then collapse to one center tab with 'One thing at a time'; strong hook for focus/productivity content",
+      "props": "niche: str",
+      "niche_affinity": ["life", "ds"],
+      "duration_hint": "9-11s"
+    },
+    {
       "componentName": "CUSTOM_SCENE_SLOT",
       "template_source": "generate_custom_scene.py",
       "use_when": "no existing component fits — generate a one-off scene with: python3 scripts/generate_custom_scene.py --name MyComponent --prompt '<description>' --niche ds|life|poetry",

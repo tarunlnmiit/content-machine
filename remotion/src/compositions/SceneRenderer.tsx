@@ -14,6 +14,9 @@ import { LineReveal } from "./scenes/LineReveal";
 import { CounterReveal } from "./scenes/CounterReveal";
 import { ImageTextReveal } from "./scenes/ImageTextReveal";
 import { HandwrittenReveal } from "./scenes/HandwrittenReveal";
+import { VoiceMemoryDissolve } from "./scenes/VoiceMemoryDissolve";
+import { DataPipelineFlow } from "./scenes/DataPipelineFlow";
+import { BrowserTabOverload } from "./scenes/BrowserTabOverload";
 
 const CROSSFADE_FRAMES = 12;
 
@@ -106,6 +109,9 @@ export function SceneRenderer({ plan, niche }: { plan: ScenePlan; niche: Niche }
     case "CounterReveal":     return <CounterReveal     {...p} />;
     case "ImageTextReveal":    return <ImageTextReveal    {...p} />;
     case "HandwrittenReveal":  return <HandwrittenReveal  {...p} />;
+    case "VoiceMemoryDissolve":        return <VoiceMemoryDissolve        {...p} />;
+    case "DataPipelineFlow":        return <DataPipelineFlow        {...p} />;
+    case "BrowserTabOverload":        return <BrowserTabOverload        {...p} />;
     default:                  return <PlaceholderScene plan={plan} niche={niche} />;
   }
 }
