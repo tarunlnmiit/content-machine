@@ -109,6 +109,7 @@ REQUIRED COMPONENT RULES (hard constraints — violating these is an error):
 - If ANY number, stat, percentage, count, or metric appears in the script → at least ONE scene MUST use CounterReveal.
 - If niche is life or poetry → at least ONE scene MUST use ImageTextReveal (pick the most cinematic/emotional moment).
 - If niche is poetry → at least ONE scene MUST use HandwrittenReveal (pick a verse or lyrical line).
+- EXACTLY ONE scene MUST use CUSTOM_SCENE_SLOT — pick the single most visually complex moment (data flow, abstract concept, emotional peak) where a generative motion graphic adds value no existing component can match. Set props.description to a clear 2–3 sentence brief for the visual.
 
 Return a JSON array of {shorts} short objects. Each short object MUST have exactly these fields:
 {{
@@ -177,6 +178,7 @@ REQUIRED COMPONENT RULES (hard constraints — violating these is an error):
 - If ANY number, stat, percentage, count, or metric appears in the script → at least ONE scene MUST use CounterReveal.
 - If niche is life or poetry → at least ONE scene MUST use ImageTextReveal (pick the most cinematic/emotional moment).
 - If niche is poetry → at least ONE scene MUST use HandwrittenReveal (pick a verse or lyrical line).
+- EXACTLY ONE scene MUST use CUSTOM_SCENE_SLOT — pick the single most visually complex moment (data flow, abstract concept, emotional peak) where a generative motion graphic adds value no existing component can match. Set props.description to a clear 2–3 sentence brief for the visual.
 
 Rules:
 - Each scene must use exactly one component from the catalog.
