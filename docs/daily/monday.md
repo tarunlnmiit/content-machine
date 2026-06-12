@@ -267,10 +267,10 @@ Each run creates `content/derivatives/{week}/{slug}/` with:
 
 | File | Content | Used by |
 |------|---------|---------|
-| `twitter_thread.txt` | 8–12 tweet thread | Friday manual post |
-| `linkedin_post.txt` | 1,200-char professional post | scheduler.py auto |
-| `instagram_caption.txt` | Caption + hashtags | Metricool CSV |
-| `threads_post.txt` | Threads-formatted post | Metricool CSV |
+| `twitter_thread.txt` | 8–12 tweet thread (+ 2 hashtags on closing tweet) | Friday manual post |
+| `linkedin_post.txt` | 1,200-char professional post (+ 4 hashtags) | scheduler.py auto |
+| `instagram_caption.txt` | Caption + hashtags (up to 12) | Metricool CSV |
+| `threads_post.txt` | Threads-formatted post (+ 3 hashtags) | Metricool CSV |
 | `newsletter.txt` | Email newsletter (~400 words) | Beehiiv Sunday |
 | `youtube_metadata.json` | Title, description, tags, chapter markers | Thursday YouTube upload |
 | `youtube_shorts_metadata.json` | Short-form title, description, tags | Thursday Shorts upload |
@@ -278,6 +278,8 @@ Each run creates `content/derivatives/{week}/{slug}/` with:
 | `thumbnail_brief.json` | Hook, visual direction, colors | Tuesday Remotion thumbnail |
 | `claude_design_brief.json` | Emotional core, story frames | Tuesday social images |
 | `schedule.json` | Computed publish timestamps | Friday Metricool CSV |
+
+**Hashtags (auto, per platform):** all four social derivatives get hashtags — Claude's topical tags merged with a curated per-niche pool, deduped + capped (Twitter 2 · Threads 3 · LinkedIn 4 · Instagram 12). Edit the pools in `config/hashtags.json` — no code change needed.
 
 ### Verify schedule.json was created correctly
 
