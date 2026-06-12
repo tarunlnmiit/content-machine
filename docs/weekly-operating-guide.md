@@ -382,7 +382,7 @@ LinkedIn tokens expire every 60 days. Refresh: `python3 scripts/auth_linkedin.py
 | Day 5 | Distribution automation | ⚠️ Scripts done — scheduler not running, DB empty |
 | Day 6 | First full production run | ⚠️ Blogs + derivatives exist, no posts loaded, no videos |
 | Day 7 | SOP + analytics | ⚠️ `collect_analytics.py` done — Streamlit dashboard not built |
-| Day 8 | Remotion video pipeline | ✅ Done — 25 compositions + 10 scene components + render scripts |
+| Day 8 | Remotion video pipeline | ✅ Done — 25 compositions + 13 scene components + render scripts + generate_custom_scene.py |
 
 **Remaining before fully automated:**
 - Load current blogs: `python3 scripts/load_posts.py`
